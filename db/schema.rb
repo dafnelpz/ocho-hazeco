@@ -11,10 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160802021558) do
+ActiveRecord::Schema.define(version: 20160802024549) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bags", force: :cascade do |t|
+    t.string   "color",      null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "deliveries", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "deliveries", ["user_id"], name: "index_deliveries_on_user_id", using: :btree
 
   create_table "roles", force: :cascade do |t|
     t.boolean  "user"
@@ -49,6 +63,7 @@ ActiveRecord::Schema.define(version: 20160802021558) do
   add_index "users", ["role_id"], name: "index_users_on_role_id", using: :btree
   add_index "users", ["user_id"], name: "index_users_on_user_id", using: :btree
 
+  add_foreign_key "deliveries", "users"
   add_foreign_key "users", "roles"
   add_foreign_key "users", "users"
 end

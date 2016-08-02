@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :bags
   devise_for :users
   resources :users
   root 'welcome#index'
