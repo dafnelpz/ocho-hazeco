@@ -57,8 +57,8 @@ ActiveRecord::Schema.define(version: 20160803010535) do
 
   create_table "users", force: :cascade do |t|
     t.string   "name",                                null: false
-    t.string   "phone",                               null: false
-    t.string   "address",                             null: false
+    t.string   "phone"
+    t.string   "address"
     t.integer  "role_id"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
