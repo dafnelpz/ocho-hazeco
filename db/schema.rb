@@ -24,10 +24,12 @@ ActiveRecord::Schema.define(version: 20160803010535) do
 
   create_table "deliveries", force: :cascade do |t|
     t.integer  "user_id"
+    t.integer  "agent_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  add_index "deliveries", ["agent_id"], name: "index_deliveries_on_agent_id", using: :btree
   add_index "deliveries", ["user_id"], name: "index_deliveries_on_user_id", using: :btree
 
   create_table "roles", force: :cascade do |t|
@@ -40,6 +42,7 @@ ActiveRecord::Schema.define(version: 20160803010535) do
 
   create_table "user_bags", force: :cascade do |t|
     t.integer  "user_id"
+    t.integer  "agent_id"
     t.integer  "bag_id"
     t.integer  "delivery_id"
     t.float    "kg"
@@ -47,14 +50,15 @@ ActiveRecord::Schema.define(version: 20160803010535) do
     t.datetime "updated_at",  null: false
   end
 
+  add_index "user_bags", ["agent_id"], name: "index_user_bags_on_agent_id", using: :btree
   add_index "user_bags", ["bag_id"], name: "index_user_bags_on_bag_id", using: :btree
   add_index "user_bags", ["delivery_id"], name: "index_user_bags_on_delivery_id", using: :btree
   add_index "user_bags", ["user_id"], name: "index_user_bags_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "phone"
-    t.string   "address"
+    t.string   "name",                                null: false
+    t.string   "phone",                               null: false
+    t.string   "address",                             null: false
     t.integer  "role_id"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false

@@ -5,8 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable, omniauth_providers: [:facebook]
   belongs_to :role
-  belongs_to :user
-  has_many :users
+  has_and_belongs_to_many :user
+  has_many :agents, foreign_key: :agent_id
 
   	def self.find_for_facebook_oauth(auth)
 		user = User.where(provider: auth.provider, uid: auth.uid).first

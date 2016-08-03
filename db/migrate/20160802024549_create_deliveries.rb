@@ -2,6 +2,7 @@ class CreateDeliveries < ActiveRecord::Migration
   def change
     create_table :deliveries do |t|
       t.references :user, index: true, foreign_key: true
+      t.references :agent, index: true
 
       t.timestamps null: false
     end
