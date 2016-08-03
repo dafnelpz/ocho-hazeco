@@ -1,5 +1,7 @@
 class BagsController < ApplicationController
   before_action :set_bag, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+  load_and_authorize_resource
 
   # GET /bags
   # GET /bags.json
