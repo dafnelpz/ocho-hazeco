@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160802024549) do
+ActiveRecord::Schema.define(version: 20160803004417) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,19 @@ ActiveRecord::Schema.define(version: 20160802024549) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "user_bags", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "bag_id"
+    t.integer  "delivery_id"
+    t.float    "kg"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "user_bags", ["bag_id"], name: "index_user_bags_on_bag_id", using: :btree
+  add_index "user_bags", ["delivery_id"], name: "index_user_bags_on_delivery_id", using: :btree
+  add_index "user_bags", ["user_id"], name: "index_user_bags_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
@@ -64,6 +77,9 @@ ActiveRecord::Schema.define(version: 20160802024549) do
   add_index "users", ["user_id"], name: "index_users_on_user_id", using: :btree
 
   add_foreign_key "deliveries", "users"
+  add_foreign_key "user_bags", "bags"
+  add_foreign_key "user_bags", "deliveries"
+  add_foreign_key "user_bags", "users"
   add_foreign_key "users", "roles"
   add_foreign_key "users", "users"
 end
