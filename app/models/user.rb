@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
-         :omniauthable, omniauth_providers: [:facebook]
+         :confirmable, :timeoutable, :omniauthable, omniauth_providers: [:facebook]
   belongs_to :role
   has_and_belongs_to_many :user
   has_many :agents, foreign_key: :agent_id
