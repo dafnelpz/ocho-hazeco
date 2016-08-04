@@ -17,11 +17,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.nav {
+	height: 50px;
+}
+
 .navbar {
-	background-color: black;
+	background-color: #191919;
 	width: 100%;
 	border: none;
 	border-radius: 0px;
+	position: fixed;
+	z-index: 2;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -57,6 +63,4 @@
 .container-fluid .navbar-brand {
     color: white;
 }
-
-
 
