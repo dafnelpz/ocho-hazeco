@@ -4,19 +4,20 @@
 
 /*SLIDER*/
 #contentContainer {
-    width: 100%;
+    width: 100vw;
     height: 85vh;
     overflow: hidden;
     margin-top: -21px;
 }
 
 #wrapper {
-    width: 100%;
+    width: 400vw;
     transform: translate3d(0, 0, 0);
+    transition: transform .5s ease-in-out;
 }
 .content {
     float: left;
-    width: 100%;
+    width: 100vw;
     height: 85vh;
     white-space: normal;
     background-repeat: no-repeat;
@@ -37,3 +38,52 @@
     background-color: #DC143C;
     background-image: url("//www.kirupa.com/images/graySquare.png");
 }
+
+#navLinks {
+    text-align: center;
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+}
+
+#navLinks ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+#navLinks ul li {
+    float: left;
+    text-align: center;
+    margin: 10px;
+    list-style: none;
+    cursor: pointer;
+    background-color: #cccccc;
+    padding: 5px;
+    border-radius: 50%;
+    opacity: .6;
+}
+
+#navLinks ul li:hover {
+    background-color: #7f7f7f;
+    opacity: 1;
+}
+
+#navLinks ul li.active {
+    background-color: #323232;
+    outline-width: 7px;
+    opacity: 1;
+}
+
+#navLinks ul li.active:hover {
+    background-color: #7f7f7f;
+}
+
+
+
+
+
+
+

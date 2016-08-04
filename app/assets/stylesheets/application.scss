@@ -19,14 +19,15 @@
 
 .navbar {
 	background-color: black;
-	font-family: Helvetica;
-	font-weight: lighter;
 	width: 100%;
 	border: none;
 	border-radius: 0px;
 }
 
 .navbar-default .navbar-nav > li > a {
+	font-family: Helvetica;
+	font-size: 15px;
+	font-weight: lighter;
 	color: #71d1cc;
 }
 
@@ -35,11 +36,27 @@
 	background-color: #162928;
 }
 
+.navbar-default .navbar-nav > li > a.login {
+	color: #f58738;
+}
+
+.navbar-default .navbar-nav > li > a.login:hover {
+	color: #f58738;
+	background-color: #311b0b;
+}
+
+.navbar-default .navbar-nav > li > a.join {
+	color: #bada55;
+}
+
+.navbar-default .navbar-nav > li > a.join:hover {
+	color: #bada55;
+	background-color: #252b11;
+}
+
 .container-fluid .navbar-brand {
     color: white;
 }
 
-.container-fluid .navbar-brand:hover {
-	color: #bada55;
-	background-color: #252b11;
-}
+
+
