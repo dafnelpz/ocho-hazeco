@@ -22,7 +22,7 @@ module OchoHazeco
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.time_zone = "America/Mexico_City"
-    config.i18n.default_locale = :es
+    # config.i18n.default_locale = :es
     config.active_record.raise_in_transactional_callbacks = true
   end
 end

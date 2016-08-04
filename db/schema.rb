@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 20160803010535) do
   add_index "user_bags", ["user_id"], name: "index_user_bags_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "name",                                null: false
+    t.string   "name"
     t.string   "phone"
     t.string   "address"
     t.integer  "role_id"
@@ -72,6 +72,10 @@ ActiveRecord::Schema.define(version: 20160803010535) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
     t.integer  "user_id"
     t.string   "uid"
     t.string   "provider"
