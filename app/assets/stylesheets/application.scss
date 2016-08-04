@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *= require_self
+ *= require_tree .
  *
  */
 
@@ -20,10 +21,13 @@
 	background-color: black;
 	font-family: Helvetica;
 	font-weight: lighter;
+	width: 100%;
+	border: none;
+	border-radius: 0px;
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: white;
+	color: #71d1cc;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
