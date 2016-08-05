@@ -17,17 +17,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.nav {
-	height: 50px;
-}
-
 .navbar {
-	background-color: #191919;
 	width: 100%;
 	border: none;
 	border-radius: 0px;
 	position: fixed;
-	z-index: 2;
+	background-color: #323232;
 }
 
 .navbar-default .navbar-nav li a {
@@ -35,10 +30,6 @@
 	font-size: 15px;
 	font-weight: lighter;
 	color: #71d1cc;
-}
-
-.navbar-default .navbar-nav li.right {
-	float: right;
 }
 
 .navbar-default .navbar-nav li a:hover {
@@ -71,10 +62,6 @@
 .navbar-default .navbar-nav li a.logout:hover {
 	color: #ebdc5b;
 	background-color: #2f2c12;
-}
-
-.container-fluid .navbar-brand {
-    color: white;
 }
 
 .navbar-toggle {
