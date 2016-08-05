@@ -2,6 +2,70 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* MODAL LOGIN */
+.modal-header {
+    color: #f58738;
+    background-color: #311b0b;
+    height: 50px;
+    border-bottom: none;
+}
+
+button.close {
+    color: white;
+}
+
+button.close:hover {
+    color: white;
+}
+
+.modal-title {
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 22px;
+    margin-top: -5px;
+}
+
+.modal-body {
+    color: #311b0b;
+    background-color: white;
+}
+
+.modal-content {
+    width: 300px;
+    float: right;
+    position: relative;
+    text-align: center;
+    top: 5vh;
+}
+
+.field {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.field_content {
+    font-weight: lighter;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid #311b0b 0.2px;
+}
+
+.remember {
+    font-size: 12px;
+}
+
+button.btn {
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    background-color: #209c23;
+    color: white;
+}
+
 /* BODY */
 body {
     background-color: #323232;
