@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* BODY */
+body {
+    background-color: #323232;
+}
+
 /*SLIDER*/
 #contentContainer {
     width: 100vw;
@@ -84,15 +89,46 @@
     background-color: #7f7f7f;
 }
 
-/* INFO */
-#info {
+/* SOCIAL MEDIA */
+#social_media {
     position: absolute;
-    top: 90vh;
+    width: 100vw;
+    height: 10vh;
+    top: 88vh;
 }
 
+#social_media ul li {
+    float: left;
+    text-align: center;
+    width: 5vw;
+    height: 5vw;
+    margin: 10px;
+    list-style: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 5px;
+}
 
+#facebook {
+    background-image: url("facebook.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+#instagram {
+    background-image: url("instagram.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+#pinterest {
+    background-image: url("pinterest.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 

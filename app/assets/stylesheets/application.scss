@@ -31,7 +31,10 @@
 	border-radius: 0px;
 	position: fixed;
 	z-index: 10;
-	display: block;
+}
+
+a .navbar-brand {
+	color: white;
 }
 
 .nav .navbar-text {
