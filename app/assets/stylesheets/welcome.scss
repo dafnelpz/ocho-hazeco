@@ -7,8 +7,6 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    position: absolute;
-    z-index: -10;
 }
 
 #wrapper {
@@ -32,15 +30,15 @@
 
 }
 #itemTwo {
-    background-color: #FF7F50;
+    background-color: black;
     background-image: url("//www.kirupa.com/images/yellowSquare.png");
 }
 #itemThree {
-    background-color: #1E90FF;
+    background-color: black;
     background-image: url("//www.kirupa.com/images/pinkSquare.png");
 }
 #itemFour {
-    background-color: #DC143C;
+    background-color: black;
     background-image: url("//www.kirupa.com/images/graySquare.png");
 }
 
@@ -83,5 +81,24 @@
 #navLinks ul li.active:hover {
     background-color: #7f7f7f;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
