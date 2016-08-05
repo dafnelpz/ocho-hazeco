@@ -17,8 +17,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* ALERTS */
 .alert-info {
 	margin-bottom: 0px;
+}
+
+/* NAVBAR */
+
+.nav .navbar-text {
+	font-family: Helvetica;
+	font-size: 15px;
+	font-weight: lighter;
+	color: #ebdc5b;
 }
 
 .navbar {
