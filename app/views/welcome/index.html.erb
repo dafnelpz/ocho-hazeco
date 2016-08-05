@@ -2,33 +2,11 @@
 <html>
 <head>
   <title>Ocho</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%#= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<!-- LOGIN WITH FB -->
-	<script>
-	  window.fbAsyncInit = function() {
-	    FB.init({
-	      appId      : '865923363537795',
-	      xfbml      : true,
-	      version    : 'v2.6'
-	    });
-	  };
-
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "//connect.facebook.net/en_US/sdk.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-	</script>
-
-	<%= yield %>
-	<%= render "partials/navbar" %>
-
 	<!-- SLIDER -->
 	<div id="contentContainer">
 		<div id="wrapper">
@@ -50,9 +28,28 @@
 
 	<!-- INFO -->
 
-	<div>
-		<p>
+	<div id="info">
+		<p> <a name="what"></a>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in egestas nunc, ac varius odio. Nullam aliquet vitae urna eu pulvinar. Nullam bibendum facilisis egestas. Etiam convallis placerat bibendum. Ut id felis lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel mollis ex, quis tincidunt purus.
+
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam ante nec sodales fringilla. Mauris ultricies aliquet quam, sed lobortis nibh elementum vitae. Praesent ac aliquam augue. Sed scelerisque nibh nec magna fermentum, quis posuere mi malesuada. Aliquam posuere quam et dignissim porttitor. Ut eu sapien dolor. Donec bibendum egestas facilisis. Sed eget sem blandit, feugiat purus in, facilisis justo. Aliquam tristique arcu sapien, ut auctor leo vestibulum eu. Phasellus tempor tellus vitae velit tristique, vitae malesuada ante vestibulum. Etiam vel erat augue.
+
+			Donec molestie, sapien in euismod tristique, sapien nunc tristique nisl, in convallis nunc diam a erat. Curabitur in libero efficitur, semper odio et, rutrum nisl. Nunc tempor, neque et sagittis mattis, justo eros pretium nibh, nec rutrum nunc diam vel lorem. Aenean nec volutpat turpis. Sed faucibus purus id leo suscipit, ac interdum erat vehicula. Nam et facilisis tellus. Phasellus ac ligula a elit ultrices consectetur. Duis ac sollicitudin urna, id varius lorem. Praesent congue molestie fermentum. Mauris fringilla porttitor purus sed facilisis.
+
+			Morbi at augue magna. Quisque sodales orci ligula, eget rhoncus ipsum interdum quis. Nam non bibendum tellus. Donec placerat lobortis ligula, non semper ligula porta nec. Nunc venenatis purus ex, ut posuere nibh hendrerit et. Vivamus non imperdiet metus, id interdum sem. Pellentesque consequat posuere est quis condimentum.
+
+			Morbi rutrum placerat molestie. Ut at libero mattis, hendrerit magna vel, dictum enim. Donec vehicula porttitor sodales. Sed at vestibulum libero. Phasellus quis nunc ullamcorper, suscipit felis vitae, facilisis tortor. Maecenas tellus nisi, interdum nec rhoncus aliquam, tempus ut nunc. Nam rhoncus purus sem, id accumsan velit dictum in. Fusce massa purus, bibendum nec orci et, vestibulum luctus enim. Ut placerat semper lacus et fermentum. Sed accumsan dui eu tortor efficitur semper. Cras vel finibus ipsum. Sed convallis ullamcorper sem. Donec lacinia neque nisl, tincidunt aliquet dui pellentesque ut. Nunc rhoncus enim sollicitudin convallis sagittis.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in egestas nunc, ac varius odio. Nullam aliquet vitae urna eu pulvinar. Nullam bibendum facilisis egestas. Etiam convallis placerat bibendum. Ut id felis lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel mollis ex, quis tincidunt purus.
+
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam ante nec sodales fringilla. Mauris ultricies aliquet quam, sed lobortis nibh elementum vitae. Praesent ac aliquam augue. Sed scelerisque nibh nec magna fermentum, quis posuere mi malesuada. Aliquam posuere quam et dignissim porttitor. Ut eu sapien dolor. Donec bibendum egestas facilisis. Sed eget sem blandit, feugiat purus in, facilisis justo. Aliquam tristique arcu sapien, ut auctor leo vestibulum eu. Phasellus tempor tellus vitae velit tristique, vitae malesuada ante vestibulum. Etiam vel erat augue.
+
+			Donec molestie, sapien in euismod tristique, sapien nunc tristique nisl, in convallis nunc diam a erat. Curabitur in libero efficitur, semper odio et, rutrum nisl. Nunc tempor, neque et sagittis mattis, justo eros pretium nibh, nec rutrum nunc diam vel lorem. Aenean nec volutpat turpis. Sed faucibus purus id leo suscipit, ac interdum erat vehicula. Nam et facilisis tellus. Phasellus ac ligula a elit ultrices consectetur. Duis ac sollicitudin urna, id varius lorem. Praesent congue molestie fermentum. Mauris fringilla porttitor purus sed facilisis.
+
+			Morbi at augue magna. Quisque sodales orci ligula, eget rhoncus ipsum interdum quis. Nam non bibendum tellus. Donec placerat lobortis ligula, non semper ligula porta nec. Nunc venenatis purus ex, ut posuere nibh hendrerit et. Vivamus non imperdiet metus, id interdum sem. Pellentesque consequat posuere est quis condimentum.
+
+			Morbi rutrum placerat molestie. Ut at libero mattis, hendrerit magna vel, dictum enim. Donec vehicula porttitor sodales. Sed at vestibulum libero. Phasellus quis nunc ullamcorper, suscipit felis vitae, facilisis tortor. Maecenas tellus nisi, interdum nec rhoncus aliquam, tempus ut nunc. Nam rhoncus purus sem, id accumsan velit dictum in. Fusce massa purus, bibendum nec orci et, vestibulum luctus enim. Ut placerat semper lacus et fermentum. Sed accumsan dui eu tortor efficitur semper. Cras vel finibus ipsum. Sed convallis ullamcorper sem. Donec lacinia neque nisl, tincidunt aliquet dui pellentesque ut. Nunc rhoncus enim sollicitudin convallis sagittis.
+
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in egestas nunc, ac varius odio. Nullam aliquet vitae urna eu pulvinar. Nullam bibendum facilisis egestas. Etiam convallis placerat bibendum. Ut id felis lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel mollis ex, quis tincidunt purus.
 
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam ante nec sodales fringilla. Mauris ultricies aliquet quam, sed lobortis nibh elementum vitae. Praesent ac aliquam augue. Sed scelerisque nibh nec magna fermentum, quis posuere mi malesuada. Aliquam posuere quam et dignissim porttitor. Ut eu sapien dolor. Donec bibendum egestas facilisis. Sed eget sem blandit, feugiat purus in, facilisis justo. Aliquam tristique arcu sapien, ut auctor leo vestibulum eu. Phasellus tempor tellus vitae velit tristique, vitae malesuada ante vestibulum. Etiam vel erat augue.
 
@@ -167,3 +164,22 @@
 	</script>
 </body>
 </html>
+
+<!-- MODAL -->
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

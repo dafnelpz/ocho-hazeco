@@ -24,20 +24,21 @@
 
 /* NAVBAR */
 
-.nav .navbar-text {
-	font-family: Helvetica;
-	font-size: 15px;
-	font-weight: lighter;
-	color: #ebdc5b;
-}
-
 .navbar {
-	background-color: transparent;
+	background-color: #323232;
 	width: 100%;
 	border: none;
 	border-radius: 0px;
 	position: fixed;
 	z-index: 10;
+	display: block;
+}
+
+.nav .navbar-text {
+	font-family: Helvetica;
+	font-size: 15px;
+	font-weight: lighter;
+	color: #ebdc5b;
 }
 
 .navbar-default .navbar-nav li a {

@@ -5,8 +5,10 @@
 /*SLIDER*/
 #contentContainer {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
+    margin-top: 50px;
+    position: absolute;
 }
 
 #wrapper {
@@ -18,7 +20,7 @@
 .content {
     float: left;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     white-space: normal;
     background-repeat: no-repeat;
 }
@@ -82,7 +84,11 @@
     background-color: #7f7f7f;
 }
 
-
+/* INFO */
+#info {
+    position: absolute;
+    top: 90vh;
+}
 
 
 
