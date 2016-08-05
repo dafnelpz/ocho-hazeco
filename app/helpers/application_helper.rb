@@ -1,4 +1,21 @@
 module ApplicationHelper
+
+  def resource_name
+    :user
+  end
+
+  def resource
+    @resource ||= User.new
+  end
+  
+  def resource_class
+    devise_mapping.to
+  end
+  
+  def devise_mapping
+    Devise.mappings[:user]
+  end
+  
 	def flash_message
     flash_collection = []
 	    if flash[:notice]
