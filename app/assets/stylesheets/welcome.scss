@@ -92,17 +92,26 @@ body {
 /* SOCIAL MEDIA */
 #social_media {
     position: absolute;
+    text-align: center;
     width: 100vw;
-    height: 10vh;
-    top: 88vh;
+    height: 7vh;
+    top: 85vh;
 }
 
-#social_media ul li {
+#social_media ul {
+    margin-left: -80px;
+}
+
+#social_media li {
+    display: inline-block;
+}
+
+#social_media li a {
     float: left;
     text-align: center;
-    width: 5vw;
-    height: 5vw;
-    margin: 10px;
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-left: 3vw;
     list-style: none;
     cursor: pointer;
     background-color: transparent;
@@ -130,8 +139,20 @@ body {
     background-repeat: no-repeat;
 }
 
+#social_media li a#facebook {
+    width: 3.8vw;
+    height: 3.8vw;
+}
 
+#social_media li a#instagram {
+    width: 3.8vw;
+    height: 3.8vw;
+}
 
+#social_media li a#pinterest {
+    background-color: white;
+    border-radius: 50%;
+}
 
 
 
