@@ -23,15 +23,22 @@
     font-weight: lighter;
     font-size: 22px;
     margin-top: -5px;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
-button.close {
+button.x {
+    font-size: 20px;
+    font-weight: bold;
     color: white;
-}
+    float: right;
+    background-color: transparent;
+    border: none;
+    opacity: 0.7;
+    margin-top: -10px;
+    margin-right: -10px;}
 
-button.close:hover {
-    color: white;
+button.x:hover {
+    opacity: 0.5;
 }
 
 div.modal-body {
@@ -65,19 +72,20 @@ div.modal-body {
     font-weight: lighter;
 }
 
-.btn {
+.button-log {
     font-family: Helvetica;
     font-weight: lighter;
     font-size: 16px;
     width: 100%;
-    border: none;
+    height: 32px;
+    border-color: transparent;
+    border-radius: 5px;
     background-color: #a7c44c;
     color: #374119;
     margin-top: 5px;
 }
 
-.btn:hover {
-    background-color: #9dda55;
+.button-log:hover {
     opacity: 0.7;
 }
 
