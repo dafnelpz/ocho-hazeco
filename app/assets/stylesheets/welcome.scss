@@ -3,11 +3,27 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* MODAL LOGIN */
+.modal-content {
+    width: 265px;
+    float: right;
+    position: relative;
+    text-align: center;
+    top: 5vh;
+}
+
 .modal-header {
     color: #f58738;
     background-color: #311b0b;
     height: 50px;
     border-bottom: none;
+}
+
+.modal-title {
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 22px;
+    margin-top: -5px;
+    margin-left: 15px;
 }
 
 button.close {
@@ -18,30 +34,21 @@ button.close:hover {
     color: white;
 }
 
-.modal-title {
-    font-family: Helvetica;
-    font-weight: lighter;
-    font-size: 22px;
-    margin-top: -5px;
-}
-
-.modal-body {
-    color: #311b0b;
-    background-color: white;
-}
-
-.modal-content {
-    width: 300px;
-    float: right;
-    position: relative;
-    text-align: center;
-    top: 5vh;
+div.modal-body {
+    color: #515151;
+    background-color: #f7f6f3;
+    padding: 10px 15px 5px 15px;
 }
 
 .field {
     font-family: Helvetica;
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.field label {
+    margin: 0px;
+    font-weight: lighter;
 }
 
 .field_content {
@@ -49,21 +56,47 @@ button.close:hover {
     font-size: 13px;
     background-color: transparent;
     border: none;
-    border-bottom: solid #311b0b 0.2px;
+    border-bottom: solid #515151 0.2px;
 }
 
-.remember {
-    font-size: 12px;
+.remember label {
+    font-size: 13px;
+    font-family: Helvetica;
+    font-weight: lighter;
 }
 
-button.btn {
+.btn {
     font-family: Helvetica;
     font-weight: lighter;
     font-size: 16px;
     width: 100%;
     border: none;
-    background-color: #209c23;
-    color: white;
+    background-color: #a7c44c;
+    color: #374119;
+    margin-top: 5px;
+}
+
+.btn:hover {
+    background-color: #9dda55;
+    opacity: 0.7;
+}
+
+.modal-footer {
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    background-color: #f4f2ee;
+}
+
+.modal-footer a {
+    font-family: Helvetica;
+    font-weight: lighter;
+    color: #515151;
+}
+
+.modal-footer a:hover {
+    color: #5aa7a3;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 /* BODY */
