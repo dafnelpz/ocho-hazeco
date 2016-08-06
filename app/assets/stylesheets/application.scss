@@ -18,6 +18,12 @@
 @import "bootstrap";
 
 /* ALERTS */
+.alert {
+	border-radius: 0px;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
 .alert-info {
 	margin-bottom: 0px;
 }

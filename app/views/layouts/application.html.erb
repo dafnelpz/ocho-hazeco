@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= flash_message %>
 </head>
 <body>
 	<!-- LOGIN WITH FB -->
@@ -27,7 +28,6 @@
 	</script>
 	
 	<%= render "partials/navbar" %>
-	<%= flash_message %>
 	<%= yield %>
 </body>
 </html>
