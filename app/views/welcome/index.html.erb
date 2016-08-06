@@ -146,13 +146,13 @@
 </html>
 
 <!-- MODAL LOGIN -->
-<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+<div class="modal fade" tabindex="-1" role="dialog" id="modalLogin">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       
-      <div class="modal-header">
+      <div class="modal-header" id="header-login">
         <button type="button" class="x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Welcome</h4>
+        <h4 class="modal-title">Welcome back</h4>
       </div>
       
       <div class="modal-body">
@@ -176,7 +176,54 @@
 		  <% end -%>
 
 		  <div class="actions">
-		  	<%= f.submit "Log in", class: "button-log" %>
+		  	<%= f.submit "Log in", class: "button-login-join" %>
+		  </div>
+		<% end %>
+      </div>
+
+      <div class="modal-footer">
+		<%= render "devise/shared/links" %>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- MODAL JOIN -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modalJoin">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-header"  id="header-join">
+        <button type="button" class="x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Welcome</h4>
+      </div>
+      
+      <div class="modal-body">
+
+		<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+		  <%= devise_error_messages! %>
+
+		  <div class="field">
+		    <%= f.label :email, "e-mail" %><br />
+		    <%= f.email_field :email, autofocus: true, class: "field_content" %>
+		  </div>
+
+		  <div class="field">
+		    <%= f.label :password, "password" %>
+		    <% if @minimum_password_length %>
+		    <em>(<%= @minimum_password_length %> characters minimum)</em>
+		    <% end %><br />
+		    <%= f.password_field :password, autocomplete: "off", class: "field_content" %>
+		  </div>
+
+		  <div class="field">
+		    <%= f.label :password_confirmation, "password confirmation" %><br />
+		    <%= f.password_field :password_confirmation, autocomplete: "off", class: "field_content" %>
+		  </div>
+
+		  <div class="actions">
+		  	<%= f.submit "Join now", class: "button-login-join" %>
 		  </div>
 		<% end %>
       </div>

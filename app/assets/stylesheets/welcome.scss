@@ -2,20 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/* MODAL LOGIN */
+/* MODAL */
 .modal-content {
     width: 265px;
     float: right;
     position: relative;
     text-align: center;
     top: 5vh;
-}
-
-.modal-header {
-    color: #f58738;
-    background-color: #311b0b;
-    height: 50px;
-    border-bottom: none;
 }
 
 .modal-title {
@@ -66,29 +59,6 @@ div.modal-body {
     border-bottom: solid #515151 0.2px;
 }
 
-.remember label {
-    font-size: 13px;
-    font-family: Helvetica;
-    font-weight: lighter;
-}
-
-.button-log {
-    font-family: Helvetica;
-    font-weight: lighter;
-    font-size: 16px;
-    width: 100%;
-    height: 32px;
-    border-color: transparent;
-    border-radius: 5px;
-    background-color: #a7c44c;
-    color: #374119;
-    margin-top: 5px;
-}
-
-.button-log:hover {
-    opacity: 0.7;
-}
-
 .modal-footer {
     text-align: center;
     padding: 10px 15px 10px 15px;
@@ -105,6 +75,45 @@ div.modal-body {
     color: #5aa7a3;
     text-decoration: none;
     background-color: transparent;
+}
+
+.button-login-join {
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 16px;
+    width: 100%;
+    height: 32px;
+    border-color: transparent;
+    border-radius: 5px;
+    background-color: #a7c44c;
+    color: #374119;
+    margin-top: 5px;
+}
+
+.button-login-join:hover {
+    opacity: 0.7;
+}
+
+/* MODAL LOGIN */
+div #header-login {
+    color: #f58738;
+    background-color: #311b0b;
+    height: 50px;
+    border-bottom: none;
+}
+
+.remember label {
+    font-size: 13px;
+    font-family: Helvetica;
+    font-weight: lighter;
+}
+
+/* MODAL JOIN */
+div #header-join {
+    color: #bada55;
+    background-color: #252b11;
+    height: 50px;
+    border-bottom: none;
 }
 
 /* BODY */

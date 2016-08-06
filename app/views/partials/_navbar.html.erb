@@ -28,8 +28,8 @@
             <a class="logout" href="<%= destroy_user_session_path %>" data-method="delete">Log out</a>
           </li>
         <% else %>
-          <li><a class="login" data-toggle="modal" data-target="#myModal">Log In</a></li>
-          <li><a class="join" href="<%= new_user_registration_path %>">Join</a></li>
+          <li><a class="login" data-toggle="modal" data-target="#modalLogin">Log In</a></li>
+          <li><a class="join" data-toggle="modal" data-target="#modalJoin">Join</a></li>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
