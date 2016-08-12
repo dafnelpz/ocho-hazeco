@@ -118,7 +118,7 @@ div #header-join {
 
 /* BODY */
 body {
-    background-color: #323232;
+    background-color: #f7f6f3;
 }
 
 /*SLIDER*/
@@ -233,21 +233,21 @@ body {
 }
 
 #facebook {
-    background-image: url("facebook.svg");
+    background-image: url("facebook.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #instagram {
-    background-image: url("instagram.svg");
+    background-image: url("instagram.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #pinterest {
-    background-image: url("pinterest.svg");
+    background-image: url("pinterest.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -264,11 +264,9 @@ body {
 }
 
 #social_media li a#pinterest {
-    background-color: white;
-    border-radius: 50%;
+    width: 3.8vw;
+    height: 3.8vw;
 }
-
-
 
 
 

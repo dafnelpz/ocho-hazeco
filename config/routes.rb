@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'welcome#index'
+  
   resources :bags
   devise_for :users, controllers: {
     omniauth_callbacks: "users/omniauth_callbacks",
