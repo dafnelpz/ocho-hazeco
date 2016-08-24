@@ -15,7 +15,7 @@ class Ability
             can :show, User
         elsif user.role.user
             can [:edit, :update], User, id: user.id
-            can :show, UserBag, Delivery, user_id: user.id
+            # can :show, UserBag, Delivery, user_id: user.id
         end
     else
         can :index, Welcome
