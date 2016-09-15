@@ -9,3 +9,4 @@
 Role.create(admin: true)
 Role.create(agent: true)
 Role.create(user: true)
+User.create(email: "iktan_da@outlook.com", password: "lalala", password_confirmation: "lalala")
