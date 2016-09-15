@@ -4,8 +4,11 @@ Rails.application.routes.draw do
   resources :bags
   devise_for :users, controllers: {
     omniauth_callbacks: "users/omniauth_callbacks",
-    confirmations: 'users/confirmations' 
+    confirmations: 'users/confirmations',
+    sessions: 'users/sessions'
   }
+
+  get 'users/profile'
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.

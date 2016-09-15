@@ -17,6 +17,8 @@ class Ability
             can [:edit, :update], User, id: user.id
             # can :show, UserBag, Delivery, user_id: user.id
         end
+
+        can [:show, :edit, :update, :destroy, :profile], User, id: user.id
     else
         can :index, Welcome
     end
