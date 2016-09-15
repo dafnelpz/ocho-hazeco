@@ -9,18 +9,16 @@ class Ability
         if user.role.admin
             can :manage, :all
         elsif user.role.agent
-            can :manage, UserBag, Delivery, agent_id: user.id
-            cannot :index, UserBag, Delivery
+            can :manage, [UserBag, Delivery], agent_id: user.id
+            cannot :index, [UserBag, Delivery]
             can [:edit, :update], User, id: user.id
             can :show, User
         elsif user.role.user
             can [:edit, :update], User, id: user.id
-            # can :show, UserBag, Delivery, user_id: user.id
+            can :show, [UserBag, Delivery], user_id: user.id
         end
 
         can [:show, :edit, :update, :destroy, :profile], User, id: user.id
-    else
-        can :index, Welcome
     end
     #
     # The first argument to `can` is the action you are giving the user

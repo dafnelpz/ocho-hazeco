@@ -48,11 +48,11 @@ ActiveRecord::Schema.define(version: 20160915011744) do
   add_index "deliveries", ["user_id"], name: "index_deliveries_on_user_id", using: :btree
 
   create_table "roles", force: :cascade do |t|
-    t.boolean  "user"
-    t.boolean  "agent"
-    t.boolean  "admin"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "user",       default: false
+    t.boolean  "agent",      default: false
+    t.boolean  "admin",      default: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
   create_table "user_bags", force: :cascade do |t|

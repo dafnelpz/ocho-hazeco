@@ -18,7 +18,11 @@ class Users::SessionsController < DeviseController
     set_flash_message!(:notice, :signed_in)
     sign_in(resource_name, resource)
     yield resource if block_given?
-    respond_with resource, location: users_profile_path(id: resource.id)
+    if resource.role.admin or resource.role.agent
+          respond_with resource, location: admin_root_path
+    else
+          respond_with resource, location: users_profile_path(id: resource.id)
+    end
   end
 
   # DELETE /resource/sign_out
