@@ -31,6 +31,6 @@ class User < ActiveRecord::Base
   protected
     def set_default_role
       default = Role.find_by(user: true)
-      self.role |= default
+      self.role_id ||= default.id
     end
 end
