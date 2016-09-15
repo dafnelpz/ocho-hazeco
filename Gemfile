@@ -45,6 +45,7 @@ group :development do
   gem 'spring'
 end
 
+gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'cancancan'
