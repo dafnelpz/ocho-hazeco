@@ -39,4 +39,14 @@ permit_params :name, :email, :password, :password_confirmation # PONER LOS PARÁ
 		end
 	end
 
+	controller do
+		def scoped_collection
+			if (current_user.role.admin)
+				@users = User.all
+			elsif (current_user.role.agent)
+				@users = current_user.users
+			end
+		end
+	end
+
 end
