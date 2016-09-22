@@ -6,7 +6,11 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    if current_user.role.admin
+      @users = User.all
+    elsif current_user.role.agent
+      @users = current_user.users
+    end
   end
 
   # GET /users/1
