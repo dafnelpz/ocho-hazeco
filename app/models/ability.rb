@@ -15,10 +15,10 @@ class Ability
             can :show, User
         elsif user.role.user
             can [:edit, :update], User, id: user.id
-            can :show, [UserBag, Delivery], user_id: user.id
+            can :show, [UserBag, Delivery], id: user.id
         end
 
-        can [:show, :edit, :update, :destroy, :profile], User, id: user.id
+        # can [:show, :edit, :update, :destroy, :profile], User, user_id: user.id
     end
     #
     # The first argument to `can` is the action you are giving the user
