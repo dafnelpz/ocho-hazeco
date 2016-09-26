@@ -35,8 +35,8 @@
 	background-color: #323232;
 	width: 100%;
 	border: none;
+	margin: 0px;
 	border-radius: 0px;
-	position: fixed;
 	z-index: 10;
 }
 
@@ -98,5 +98,17 @@
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #cccccc;
 }
+
+/* BODY */
+body {
+    background-color: #f7f6f3;
+    margin: 0px;
+}
+
+
+
+
+
+
 
 

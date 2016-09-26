@@ -8,6 +8,8 @@
   <%= flash_message %>
 </head>
 <body>
+	<%= render "partials/navbar" %>
+
 	<!-- LOGIN WITH FB -->
 	<script>
 	  window.fbAsyncInit = function() {
@@ -27,7 +29,6 @@
 	   }(document, 'script', 'facebook-jssdk'));
 	</script>
 	
-	<%= render "partials/navbar" %>
 	<%= yield %>
 </body>
 </html>

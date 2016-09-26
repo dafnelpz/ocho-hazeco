@@ -3,20 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* MODAL */
+
 .modal-content {
     width: 265px;
-    float: right;
+    margin: 0 auto;
     position: relative;
-    text-align: center;
     top: 5vh;
+    text-align: center;
 }
 
 .modal-title {
     font-family: Helvetica;
     font-weight: lighter;
+    text-align: center;
     font-size: 22px;
     margin-top: -5px;
-    margin-left: 30px;
 }
 
 button.x {
@@ -116,14 +117,11 @@ div #header-join {
     border-bottom: none;
 }
 
-/* BODY */
-body {
-    background-color: #f7f6f3;
+/*HEADER-WELCOME*/
+
+.header-welcome {
+    margin-top: 50px;
 }
-
-
-
-
 
 
 
