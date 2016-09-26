@@ -6,9 +6,8 @@
 
 .modal-content {
     width: 265px;
-    margin: 0 auto;
-    position: relative;
     top: 5vh;
+    float: right;
     text-align: center;
 }
 
@@ -18,21 +17,6 @@
     text-align: center;
     font-size: 22px;
     margin-top: -5px;
-}
-
-button.x {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    float: right;
-    background-color: transparent;
-    border: none;
-    opacity: 0.7;
-    margin-top: -10px;
-    margin-right: -10px;}
-
-button.x:hover {
-    opacity: 0.5;
 }
 
 div.modal-body {
@@ -117,13 +101,20 @@ div #header-join {
     border-bottom: none;
 }
 
-/*HEADER-WELCOME*/
-
-.header-welcome {
-    margin-top: 50px;
+#join-here {
+    top: 35.4vh;
+    margin: 0 auto;
+    position: relative;
+    float: none;
 }
 
-
+/*HEADER-WELCOME*/
+.header-welcome {
+    margin-top: 50px;
+    background-image: url("leaf.jpg");
+    background-attachment: fixed;
+    height: 500px;
+}
 
 
 
