@@ -4,11 +4,17 @@
 
 /* MODAL */
 
+.modal-dialog {
+    float: right;
+    margin-right: 0px;
+}
+
 .modal-content {
     width: 265px;
-    top: 5vh;
-    float: right;
+    top: 20px;
+    right: 0.5px;
     text-align: center;
+    float: right;
 }
 
 .modal-title {
