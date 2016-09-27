@@ -12,7 +12,7 @@ class Ability
             can :manage, [UserBag, Delivery], agent_id: user.id
             cannot :index, [UserBag, Delivery]
             can [:edit, :update], User, id: user.id
-            can :show, User
+            can :manage, User
         elsif user.role.user
             can [:edit, :update], User, id: user.id
             can :show, [UserBag, Delivery], id: user.id
