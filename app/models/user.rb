@@ -34,3 +34,6 @@ class User < ActiveRecord::Base
       self.role_id ||= default.id if default
     end
 end
+
+  # SCOPES
+
