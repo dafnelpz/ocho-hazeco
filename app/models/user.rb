@@ -33,7 +33,5 @@ class User < ActiveRecord::Base
       default = Role.find_by(user: true)
       self.role_id ||= default.id if default
     end
-end
-
-  # SCOPES
+  end
 

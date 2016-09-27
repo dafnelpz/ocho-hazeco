@@ -1,5 +1,15 @@
 ActiveAdmin.register User do
 
+	# actions :all, except: [:destroy] unless current_user.role.admin
+
+# controller.load_and_authorize_resource
+
+# 	controller do
+# 		def scoped_collection
+# 			end_of_assocation_chain.accesible_by(current_ability)
+# 		end
+# 	end
+
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -17,22 +27,18 @@ permit_params :id, :agent, :name, :email, :phone, :address, :encrypted_password 
 	index do
 		column :name
 		column :email
-		column :agent
+		column :phone
 
 		actions
 	end
 
-	filter :role, as: :check_boxes
-	filter :agent, as: :select
-	filter :name, as: :string
+	filter :name
+	filter :email
 	filter :phone
-	filter :address, as: :string
-	filter :email, as: :string
-	filter :encrypted_password, as: :string
+	filter :address
 
 	form do |f|
 		f.inputs "User Info" do
-			f.input :agent
 			f.input :name
 			f.input :email
 			f.input :phone
@@ -61,5 +67,4 @@ permit_params :id, :agent, :name, :email, :phone, :address, :encrypted_password 
 			end
 		end
 	end
-
 end

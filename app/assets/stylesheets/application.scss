@@ -23,7 +23,7 @@
 	border-radius: 0px;
     font-family: Helvetica;
     font-size: 14px;
-    margin-bottom: 0px;
+    position: relative;
 }
 
 .alert-info {
@@ -38,6 +38,7 @@
 	margin: 0px;
 	border-radius: 0px;
 	z-index: 10;
+	position: static;
 }
 
 .navbar-default .navbar-brand {
