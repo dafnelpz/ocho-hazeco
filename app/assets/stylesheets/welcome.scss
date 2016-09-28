@@ -15,6 +15,17 @@
     right: 0.5px;
     text-align: center;
     float: right;
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.modal-footer {
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
 }
 
 .modal-title {
@@ -104,7 +115,6 @@ div #header-join {
     color: #bada55;
     background-color: #252b11;
     height: 50px;
-    border-bottom: none;
 }
 
 #join-here {

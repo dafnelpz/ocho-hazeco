@@ -124,3 +124,67 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<!-- MODAL FORGOTTEN PASSWORD -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modalPassword">
+  <div class="modal-dialog" role="document">
+<div class="modal-content" id="password-email"> <!-- Begins modal-content -->
+		    <div class="modal-header"  id="header-password">	
+		        <h4 class="modal-title">Olvidé mi contraseña</h4>
+		    </div>
+  
+	      	<div class="modal-body">
+
+			<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  				<%= devise_error_messages! %>
+
+			  	<div class="field">
+			    	<%= f.label :email %><br />
+			    	<%= f.email_field :email, autofocus: true %>
+			  	</div>
+
+				<div class="actions">
+					<%= f.submit "Enviar instrucciones" %>
+				</div>
+			<% end %>
+		</div>
+
+		    <div class="modal-footer">
+				<%= render "devise/shared/links" %>
+		    </div>
+
+		</div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- CONFIRMATION EMAIL -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modalConfirmation">
+  <div class="modal-dialog" role="document">
+<div class="modal-content" id="conf-email"> <!-- Begins modal-content -->
+		    <div class="modal-header"  id="header-password">	
+		        <h4 class="modal-title">Email de Confirmación</h4>
+		    </div>
+  
+	      	<div class="modal-body">
+
+			<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+			 	
+			 	<%= devise_error_messages! %>
+
+				<div class="field">
+					<%= f.label :email %><br />
+				    <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+				</div>
+
+			  	<div class="actions">
+			    	<%= f.submit "Resend confirmation instructions" %>
+			  	</div>
+			<% end %>
+		</div>
+
+		    <div class="modal-footer">
+				<%= render "devise/shared/links" %>
+		    </div>
+
+		</div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
