@@ -6,13 +6,12 @@
 
 .modal-dialog {
     float: right;
-    margin-right: 0px;
+    top: 20px;
+    right: 0.5px;
 }
 
 .modal-content {
     width: 265px;
-    top: 20px;
-    right: 0.5px;
     text-align: center;
     float: right;
     border-radius: 10px;
@@ -29,7 +28,7 @@
 }
 
 .modal-title {
-    font-family: Helvetica;
+    font-family: 'Raleway', sans-serif;
     font-weight: lighter;
     text-align: center;
     font-size: 22px;
@@ -122,6 +121,14 @@ div #header-join {
     margin: 0 auto;
     position: relative;
     float: none;
+}
+
+/*MODAL PASSWORD & CONFIRMATION*/
+#header-password-confirmation {
+    color: #ebdc5b;
+    background-color: #2f2c12
+;
+    height: 50px;
 }
 
 /*HEADER-WELCOME*/

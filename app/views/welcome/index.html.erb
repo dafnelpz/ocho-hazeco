@@ -128,7 +128,7 @@
 <div class="modal fade" tabindex="-1" role="dialog" id="modalPassword">
   <div class="modal-dialog" role="document">
 <div class="modal-content" id="password-email"> <!-- Begins modal-content -->
-		    <div class="modal-header"  id="header-password">	
+		    <div class="modal-header"  id="header-password-confirmation">	
 		        <h4 class="modal-title">Olvidé mi contraseña</h4>
 		    </div>
   
@@ -138,12 +138,12 @@
   				<%= devise_error_messages! %>
 
 			  	<div class="field">
-			    	<%= f.label :email %><br />
-			    	<%= f.email_field :email, autofocus: true %>
+			    	<%= f.label :email, "e-mail" %><br />
+			    	<%= f.email_field :email, autofocus: true, class: "field_content" %>
 			  	</div>
 
 				<div class="actions">
-					<%= f.submit "Enviar instrucciones" %>
+					<%= f.submit "Enviar instrucciones", class: "button-login-join" %>
 				</div>
 			<% end %>
 		</div>
@@ -160,7 +160,7 @@
 <div class="modal fade" tabindex="-1" role="dialog" id="modalConfirmation">
   <div class="modal-dialog" role="document">
 <div class="modal-content" id="conf-email"> <!-- Begins modal-content -->
-		    <div class="modal-header"  id="header-password">	
+		    <div class="modal-header"  id="header-password-confirmation">	
 		        <h4 class="modal-title">Email de Confirmación</h4>
 		    </div>
   
@@ -171,12 +171,12 @@
 			 	<%= devise_error_messages! %>
 
 				<div class="field">
-					<%= f.label :email %><br />
-				    <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+					<%= f.label :email, "e-mail" %><br />
+				    <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), class: "field_content" %>
 				</div>
 
 			  	<div class="actions">
-			    	<%= f.submit "Resend confirmation instructions" %>
+			    	<%= f.submit "Resend confirmation instructions", class: "button-login-join" %>
 			  	</div>
 			<% end %>
 		</div>
