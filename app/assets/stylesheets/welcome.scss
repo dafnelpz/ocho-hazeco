@@ -36,7 +36,7 @@
 }
 
 div.modal-body {
-    color: #515151;
+    color: #404040;
     background-color: #f7f6f3;
     padding: 10px 15px 5px 15px;
 }
@@ -57,7 +57,7 @@ div.modal-body {
     font-size: 13px;
     background-color: transparent;
     border: none;
-    border-bottom: solid #515151 0.2px;
+    border-bottom: solid #404040 0.2px;
 }
 
 .modal-footer {
@@ -70,7 +70,7 @@ div.modal-body {
 .modal-footer a {
     font-family: Helvetica;
     font-weight: lighter;
-    color: #515151;
+    color: #404040;
 }
 
 .modal-footer a:hover {
@@ -170,6 +170,7 @@ div #header-join {
 #header-phrase h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
+    color: #404040;
 }
 
 #header-phrase h4 {
@@ -211,7 +212,7 @@ div #header-join {
     width: 130px;
     height: 130px;
     margin: 0 auto;
-    margin-top: 130px;
+    margin-top: 129px;
 }
 
 .img-1 {
@@ -229,6 +230,7 @@ div #header-join {
 .ben-txt {
     font-family: Helvetica;
     font-size: 16px;
+    color: #404040;
     text-align: center;
     margin: 20px;
     margin-top: 20px;
@@ -240,6 +242,31 @@ div #header-join {
     font-weight: 500;
     font-size: 20px;
 }
+
+/*OCHO KIDS*/
+#ocho-kids {
+    height: 500px;
+    background-color: yellow;
+    padding: 10px;
+}
+
+#kids-img {
+    background-image: url("ocho_kids.png");
+    background-repeat: no-repeat;
+    background-size: 450px 450px;
+    position: relative;
+    float: left;
+    width: 450px;
+    height: 450px;
+}
+
+#kids-info {
+    position: relative;
+    float: left;
+    width: 60.9%;
+    height: 500px;
+}
+
 
 
 
