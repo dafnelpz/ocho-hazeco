@@ -32,7 +32,7 @@
     font-weight: lighter;
     text-align: center;
     font-size: 22px;
-    margin-top: -5px;
+    margin-top: -10px;
 }
 
 div.modal-body {
@@ -62,8 +62,9 @@ div.modal-body {
 
 .modal-footer {
     text-align: center;
-    padding: 10px 15px 10px 15px;
+    padding: 9px 15px 10px 15px;
     background-color: #f4f2ee;
+    height: 76px;
 }
 
 .modal-footer a {
@@ -79,16 +80,15 @@ div.modal-body {
 }
 
 .button-login-join {
-    font-family: Helvetica;
-    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    width: 100%;
+    width: 113%;
     height: 32px;
     border-color: transparent;
-    border-radius: 5px;
     background-color: #a7c44c;
     color: #374119;
     margin-top: 5px;
+    margin-left: -15px;
 }
 
 .button-login-join:hover {
@@ -99,7 +99,7 @@ div.modal-body {
 div #header-login {
     color: #f58738;
     background-color: #311b0b;
-    height: 50px;
+    height: 40px;
     border-bottom: none;
 }
 
@@ -109,11 +109,15 @@ div #header-login {
     font-weight: lighter;
 }
 
+#body-login {
+    height: 169px;
+}
+
 /* MODAL JOIN */
 div #header-join {
     color: #bada55;
     background-color: #252b11;
-    height: 50px;
+    height: 40px;
 }
 
 #join-here {
@@ -123,12 +127,19 @@ div #header-join {
     float: none;
 }
 
+#body-join {
+    height: 194px;
+}
+
 /*MODAL PASSWORD & CONFIRMATION*/
 #header-password-confirmation {
     color: #ebdc5b;
-    background-color: #2f2c12
-;
-    height: 50px;
+    background-color: #2f2c12;
+    height: 40px;
+}
+
+#body-password-email {
+    height: 96px;
 }
 
 /*HEADER-WELCOME*/
