@@ -267,18 +267,32 @@ div #header-join {
 
 #kids-img {
     height: 60%;
-    width: 50%;
-    background-color: yellow;
+    width: 40%;
+    background-image: url("ocho_kids_2.png");
+    background-repeat: no-repeat;
+    background-size: 59%;
+    background-position: right;
     float: left;
     position: relative;
 }
 
 #kids-info {
     height: 60%;
-    width: 50%;
-    background-color: green;
+    width: 43.5%;
+    background-color: pink;
+    color: #464644;
     float: left;
     position: relative;
+}
+
+#info-1-img {
+    background-image: url("check.png");
+    background-repeat: no-repeat;
+    background-size: 45px 40px;
+    height: 40px;
+    width: 45px;
+    margin-left: 80px;
+    margin-top: 50px;
 }
 
 #kids-contact {
