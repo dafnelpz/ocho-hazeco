@@ -133,10 +133,17 @@ div #header-join {
     height: 194px;
 }
 
-/*MODAL PASSWORD & CONFIRMATION*/
-#header-password-confirmation {
+/*MODAL PASSWORD*/
+#header-password {
     color: #ebdc5b;
     background-color: #2f2c12;
+    height: 40px;
+}
+
+/*MODAL CONFIRMATION*/
+#header-confirmation {
+    color: #71d1cc;
+    background-color: #162928;
     height: 40px;
 }
 
@@ -177,47 +184,64 @@ div #header-join {
 }
 
 #ben-1 {
-    height: 500px;
-    width: 33.33%;
+    width: 20%;
     float: left;
+    margin-left: 10%;
+    position: relative;
 }
 
 #ben-2 {
-    height: 500px;
-    width: 33.33%;
+    width: 20%;
     float: left;
+    margin-left: 10%;
+    position: relative;
+    z-index: -10;
 }
 
 #ben-3 {
-    height: 500px;
-    width: 33.33%;
+    width: 20%;
     float: left;
+    margin-left: 10%;
+    position: relative;
 }
 
 .ben-img {
-    background-image: url("launch.png");
     background-repeat: no-repeat;
-    background-size: 100px 95px;
-    width: 100px;
-    height: 95px;
+    background-size: 130px 130px;
+    width: 130px;
+    height: 130px;
     margin: 0 auto;
     margin-top: 130px;
 }
 
+.img-1 {
+    background-image: url("location_2.png");
+}
+
+.img-2 {
+    background-image: url("garden.png");
+}
+
+.img-3 {
+    background-image: url("heart.png");
+}
+
 .ben-txt {
-    text-align: center;
-    margin: 40px;
-}
-
-/*TIMELINE-WELCOME*/
-#timeline-welcome{
-    height: 250px;
-    background-color: blue;
-}
-
-#timeline-welcome h2 {
-    color: white;
     font-family: Helvetica;
-    font-weight: lighter;
+    font-size: 16px;
     text-align: center;
+    margin: 20px;
+    margin-top: 20px;
+    border-top: 3px solid #71d1cc;
 }
+
+.ben-txt h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+
+
