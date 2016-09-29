@@ -247,8 +247,51 @@ div #header-join {
 #ocho-kids {
     height: 500px;
     background-color: #f4f2ee;
-    padding: 50px;
 }
+
+#kids-header {
+    height: 20%;
+    text-align: center;
+}
+
+#kids-header h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding-top: 2.5%;
+}
+
+#kids-header h2 span {
+    border-bottom: 3px solid #71d1cc;
+}
+
+#kids-img {
+    height: 60%;
+    width: 50%;
+    background-color: yellow;
+    float: left;
+    position: relative;
+}
+
+#kids-info {
+    height: 60%;
+    width: 50%;
+    background-color: green;
+    float: left;
+    position: relative;
+}
+
+#kids-contact {
+    top: 60%;
+    height: 20%;
+    background-color: blue;
+    position: relative;
+}
+
+
+
+
+
 
 
 
