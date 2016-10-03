@@ -8,17 +8,46 @@
 
 #user-pic {
 	height: 80%;
-    width: 12.5%;
+	width: 12.5%;
+	position: relative;
+	float: left;
     border-radius: 50%;
 	background-image: url("user_default.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	margin-top: 1.5%;
 	margin-left: 1.5%;
-	position: static;
 }
 
 #profile-info {
+	height: 30%;
+	width: 20%;
 	position: relative;
 	float: left;
+	display: inline;
+	bottom: -70%;
 }
+
+#c-user-name {
+	font-family: Helvetica;
+	font-weight: lighter;
+	font-size: 20px;
+}
+
+#c-user-agent {
+	font-family: Helvetica;
+	font-weight: lighter;
+	font-size: 16px;
+}
+
+#agent-name {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
