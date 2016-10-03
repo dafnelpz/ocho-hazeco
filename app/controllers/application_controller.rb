@@ -5,13 +5,13 @@ class ApplicationController < ActionController::Base
 
 	def authenticate_admin_user!
 		unless signed_in? and (current_user.role.admin or current_user.role.agent)
-			flash[:alert] = "You are not allowed to visit this page"
+			flash[:alert] = "No puedes visitar esta página."
 			redirect_to root_path
 		end
 	end
 
 	def access_denied(exception)
-		flash[:error] = "No access"
+		flash[:error] = "Sin acceso"
 		redirect_to root_path
 	end
 end
