@@ -1,8 +1,10 @@
-<div class="general_info">
-	<div class="pic"></div>
-	<div class="info"></div>
+<div id="general-info">
+	<div id="user-pic"></div>
+	<div id ="profile-info">
+		<p><%= current_user.name  %></p>
+		<p>Tu agente es <%= current_user.agent.name  %></p>
+	</div>
 </div>
-<div class="schedule"></div>
 <div class="last_delivery">
 	<div class="table"></div>
 	<div class="comments">

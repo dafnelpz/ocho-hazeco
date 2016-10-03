@@ -18,20 +18,14 @@
 
  <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      <ul class="nav navbar-nav">
-        <% if user_signed_in? %>
-          <li><p class="navbar-text">¡Hola <%= current_user.name %>!</p></li>
-        <% end %>
-      </ul>
 
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
           <li>
-            <a class="logout" href="<%= destroy_user_session_path %>" data-method="delete">Cerrar sesión</a>
+            <a class="logout" href="<%= destroy_user_session_path %>" data-method="delete">cerrar sesión</a>
           </li>
         <% else %>
-          <li><a class="login" data-toggle="modal" data-target="#modalLogin">Iniciar sesión</a></li>
+          <li><a class="login" data-toggle="modal" data-target="#modalLogin">iniciar sesión</a></li>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
