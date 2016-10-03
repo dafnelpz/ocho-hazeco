@@ -103,7 +103,38 @@
 }
 
 /*NAVBAR-DROPDOWN*/
+.glyphicon {
+    top: 0;
+    height: 50px;
+    border-radius: 0;
+}
 
+.glyphicon-cog {
+    background-color: #323232;
+    color: #71d1cc;
+    font-size: 22px;
+    border: none;
+}
+
+.glyphicon-cog:hover {
+    color: #71d1cc;
+    background-color: #162928;
+}
+
+.btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
+    color: #71d1cc;
+    background-color: #162928;
+}
+
+.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+    color: #71d1cc;
+    background-color: #162928;
+}
+
+.dropdown-menu {
+    background-color: #323232;
+    margin: 0;
+}
 
 /*NAVBAR-SOCIAL*/
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
