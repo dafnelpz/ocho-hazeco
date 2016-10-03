@@ -1,7 +1,7 @@
 
 /*GENERAL INFO*/
 #general-info {
-	height: 200px;
+	height: 30vh;
 	width: 100%;
 	position: static;
 	color: #404040;
@@ -25,13 +25,15 @@
 	background-size: 100%;
 	margin-top: 3%;
 	margin-left: 3%;
+	margin-right: 3%;
 }
 
 #profile-info {
 	height: 30%;
 	position: relative;
 	float: left;
-	bottom: -70%;
+	bottom: -45%;
+
 }
 
 #c-user-name {
@@ -40,13 +42,17 @@
 	font-size: 20px;
 }
 
+#c-user-name span {
+	border-bottom: 3px solid #71d1cc;
+}
+
 #c-user-agent {
 	font-family: Helvetica;
 	font-weight: lighter;
 	font-size: 16px;
 }
 
-#agent-name {
+.agent-info {
 	font-weight: bold;
 	font-size: 14px;
 }
@@ -77,34 +83,19 @@
 	font-weight: bold;
 }
 
+/*DIVISION*/
+hr {
+	margin-top: 22.5px;
+	margin-bottom: 22.5px;
+	border-top: 5px solid #71d1cc;
+}
+
 /*DELIVERIES*/
 #profile-deliveries {
-	height: 400px;
+	height: 50vh;
 	width: 100%;
-	background-color: red;
-	margin-top: 20px;
 	color: #404040;
-}
-
-#profile-deliveries h4 {
-	margin: 0;
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-}
-
-#profile-deliveries h4 span {
-	border-bottom: 3px solid #71d1cc;
-}
-
-#last-delivery {
-	height: 350px;
-	width: 50%;
-	position: relative;
-	float: left;
 	background-color: pink;
-	margin-top: 10px;
 }
 
 h5 {
@@ -114,18 +105,36 @@ h5 {
 	font-size: 16px;
 }
 
-h5 span {
-	font-family: Helvetica;
-	font-weight: bold;
+.espan {
+	border-bottom: 3px solid #71d1cc;
 }
 
+/*LAST DELIVERY*/
+#last-delivery {
+	height: 330px;
+	width: 50%;
+	position: relative;
+	float: left;
+	background-color: green;
+}
+
+.table-last {
+	height: 340px;
+	width: 100px;
+	background-color: green;
+	position: relative;
+	float: left;
+	z-index: 10;
+}
+
+/*TOTAL DELIVERIES*/
+
 #total-deliveries {
-	height: 350px;
+	height: 330px;
 	width: 50%;
 	position: relative;
 	float: right;
 	background-color: yellow;
-	margin-top: 10px;
 }
 
 
