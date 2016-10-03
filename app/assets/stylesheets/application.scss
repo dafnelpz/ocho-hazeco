@@ -111,24 +111,32 @@
 
 .glyphicon-cog {
     background-color: #323232;
-    color: #71d1cc;
+    color: #c1c1c1;
     font-size: 22px;
     border: none;
 }
 
 .glyphicon-cog:hover {
-    color: #71d1cc;
-    background-color: #162928;
+    color: #323232;
+    background-color: #c1c1c1;
+}
+
+.glyphicon-cog:focus {
+    color: #323232;
+    background-color: #c1c1c1;
+    border: none;
 }
 
 .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
-    color: #71d1cc;
-    background-color: #162928;
+    color: #323232;
+    background-color: #c1c1c1;
+    border: none;
 }
 
 .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
-    color: #71d1cc;
-    background-color: #162928;
+    color: #323232;
+    background-color: #c1c1c1;
+    border: none;
 }
 
 .dropdown-menu {
