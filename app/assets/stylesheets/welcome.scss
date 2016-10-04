@@ -173,7 +173,7 @@ div #header-join {
 
 #header-phrase h2 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     color: #404040;
 }
 
@@ -251,68 +251,35 @@ div #header-join {
     font-size: 20px;
 }
 
-/*DIVISION*/
-hr {
-    margin-top: 22.5px;
-    margin-bottom: 22.5px;
-    border-top: 5px solid #71d1cc;
-}
-
-/*CONOCE MÁS DE OCHO KIDS*/
-#kids-header {
-    height: 20%;
-    text-align: center;
-}
-
-#kids-header h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    padding-top: 2.5%;
-}
-
 /*OCHO KIDS*/
 #ocho-kids {
-    height: 430px;
+    height: 500px;
+    background-color: #f4f2ee;
 }
 
 #kids-img {
     height: 100%;
-    width: 33.33%;
-    background-image: url("ocho_kids_2.png");
+    width: 50%;
+    background-image: url("ocho_kids.png");
     background-repeat: no-repeat;
-    background-size: 100% 430px;
+    background-size: 500px 500px;
     background-position: right;
     float: left;
     position: relative;
 }
 
 #kids-info {
-    height: 100%;
-    width: 33.33%;
+    height: 40%;
+    width: 50%;
     color: #464644;
-    background-color: #f4f2ee;
     float: left;
     position: relative;
 }
 
-#globe-img {
-    height: 120px;
-    width: 100%;
-    background-image: url("globe.png");
-    background-repeat: no-repeat;
-    background-size: 120px 120px;
-    background-position: center;
-    margin-top: 5%;
-}
-
-#kids-world {
-    text-align: center;
-    margin-top: 4%;
-    font-family: Helvetica;
-    font-weight: lighter;
-    font-size: 40px;
-    margin-top: 3%;
+#kids-phrase {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
 }
 
 .info-check {
@@ -321,70 +288,66 @@ hr {
     background-size: 45px 40px;
     background-position: right;
     height: 40px;
-    width: 20%;
+    width: 10%;
     position: relative;
     float: left;
-    left: 0;
-    margin-right: 2.5%;
-    margin-left: 7.5%;
 }
 
 .info-desc {
     position: relative;
     float: left;
     height: 40px;
-    width: 60%;
+    width: 80%;
     margin-left: 2.5%;
 }
 
 .info-desc p {
     font-family: Helvetica;
     font-weight: lighter;
-    font-size: 16px;
-    padding-top: 4%;
+    font-size: 20px;
+    padding-top: 12px;
 }
 
 #info-1 {
-    margin-top: 5%;
+    margin-top: 0px;
 }
 
 #info-2 {
-    margin-top: 17.5%;
+    margin-top: 65px;
 }
 
 #info-3 {
-    margin-top: 30%;
-}
-
-#kids-contact {
-    height: 100%;
-    width: 33.33%;
-    position: relative;
-    float: left;
+    margin-top: 120px;
 }
 
 /*MODAL KIDS*/
 
+#kids-contact {
+    height: 60%;
+    width: 30%;
+    position: relative;
+    float: left;
+    left: 120px;
+}
+
 #join-kids {
     width: 100%;
+    height: 250px;
     text-align: center;
+    position: relative;
     float: left;
     border-radius: 0px;
-    box-shadow: none;
     border-width: 0px;
     top: 15px;
+    box-shadow: 0.1px 0.1px 100px 0.1px;
 }
 
 #join-kids .modal-header {
     border-radius: 0px;
 }
 
-#contact-title {
-    height: 50px;
-    width: 100%;
-    color: #71d1cc;
-    background-color: #162928;
-    text-align: center;
+#join-kids .button-login-join {
+    width: 108.5%;
 }
 
 #contact-title p {
@@ -394,17 +357,14 @@ hr {
     padding-top: 4%;
 }
 
-#contact-desc {
-    margin-top: 16px;
-}
-
 #contact-desc p {
     font-family: Helvetica;
     font-weight: lighter;
     font-size: 16px;
     text-align: center;
-    padding: 5%;
     margin: 0px;
+    color: #252b11;
+    background-color: #bada55;
 }
 
 

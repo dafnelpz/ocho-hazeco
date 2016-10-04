@@ -80,57 +80,46 @@
 		</div>
 	</div>
 
-	<hr width="80px">
-	<div id="kids-header">
-		<h2><span>Conoce más de OCHO Kids</span></h2>
-	</div>
-
 	<div id="ocho-kids">
 		
+		<div id="kids-img"></div>
+
 		<div id="kids-info">
 
-			<div id="globe-img"></div>
-
-			<h4 id="kids-world">¡Aprenderán a cuidar nuestro mundo!</h4>
+			<h4 id="kids-phrase">Inscribe a los más pequeños</h4>
 
 			<div id="info-1">
 				<div class="info-check"></div>
 				<div class="info-desc">
-					<p>Inscribe a los más pequeños</p>
+					<p>Aprenderán a cuidar nuestro medio ambiente 🌿</p>
 				</div>
 			</div>
 
 			<div id="info-2">
 				<div class="info-check"></div>
 				<div class="info-desc">
-					<p>Serán los encargados en casa</p>
+					<p>Desarrollarán un nuevo hábito 😎</p>
 				</div>
 			</div>
 
 			<div id="info-3">
 				<div class="info-check"></div>
 				<div class="info-desc">
-					<p>Recibirán premios por su progreso</p>
+					<p>Recibirán regalos por su progreso 🎁</p>
 				</div>
 			</div>
 		</div>
 
-		<div id="kids-img"></div>
-
 		<div id="kids-contact">
 		
-			<div id="contact-title">
-				<p>¡Quiero más información!</p>
-			</div>
-
-			<div id="contact-desc">
-				<p>¡Queremos aclarar todas tus dudas!</br> Déjanos tus datos y te contactaremos por e-mail. Recibirás información sobre OCHO KIDS y responderemos cualquier pregunta que tengas.</p>
-			</div>
-
 			<div class="modal-content" id="join-kids"> <!-- Begins modal-content -->
 			    <div class="modal-header"  id="header-join">	
-			        <h4 class="modal-title">Datos de contacto</h4>
+			        <h4 class="modal-title">¡Quiero inscribir a mi pequeño!</h4>
 			    </div>
+
+			    <div id="contact-desc">
+					<p>¡Queremos aclarar todas tus dudas!</br> Déjanos tus datos y te contactaremos por e-mail</p>
+				</div>
 
 			  	<div class="modal-body" id="body-join">
 
@@ -138,12 +127,12 @@
 					<%= devise_error_messages! %>
 
 						<div class="field">
-					    	<%= f.label :email, "Nombre del pequeño" %><br />
+					    	<%= f.label :email, "nombre del pequeño" %><br />
 					    	<%= f.email_field :email, autofocus: true, class: "field_content" %>
 						</div>
 
 						<div class="field">
-					    	<%= f.label :email, "Nombre del tutor" %><br />
+					    	<%= f.label :email, "nombre del padre / tutor" %><br />
 					    	<%= f.email_field :email, autofocus: true, class: "field_content" %>
 						</div>
 
@@ -158,7 +147,9 @@
 					<% end %>
 					</div>
 			</div><!-- /.modal-content -->
+
 		</div>
+
 	</div>
 
 </body>
