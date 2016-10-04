@@ -193,6 +193,7 @@ div #header-join {
     float: left;
     margin-left: 10%;
     position: relative;
+    top: 42px;
 }
 
 #ben-2 {
@@ -201,6 +202,7 @@ div #header-join {
     margin-left: 10%;
     position: relative;
     z-index: -10;
+    top: 42px;
 }
 
 #ben-3 {
@@ -208,6 +210,7 @@ div #header-join {
     float: left;
     margin-left: 10%;
     position: relative;
+    top: 42px;
 }
 
 .ben-img {
@@ -233,6 +236,7 @@ div #header-join {
 
 .ben-txt {
     font-family: Helvetica;
+    font-weight: lighter;
     font-size: 16px;
     color: #404040;
     text-align: center;
@@ -243,16 +247,18 @@ div #header-join {
 
 .ben-txt h4 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
 }
 
-/*OCHO KIDS*/
-#ocho-kids {
-    height: 500px;
-    background-color: #f4f2ee;
+/*DIVISION*/
+hr {
+    margin-top: 22.5px;
+    margin-bottom: 22.5px;
+    border-top: 5px solid #71d1cc;
 }
 
+/*CONOCE MÁS DE OCHO KIDS*/
 #kids-header {
     height: 20%;
     text-align: center;
@@ -265,48 +271,141 @@ div #header-join {
     padding-top: 2.5%;
 }
 
-#kids-header h2 span {
-    border-bottom: 3px solid #71d1cc;
+/*OCHO KIDS*/
+#ocho-kids {
+    height: 430px;
 }
 
 #kids-img {
-    height: 60%;
-    width: 40%;
+    height: 100%;
+    width: 33.33%;
     background-image: url("ocho_kids_2.png");
     background-repeat: no-repeat;
-    background-size: 59%;
+    background-size: 100% 430px;
     background-position: right;
     float: left;
     position: relative;
 }
 
 #kids-info {
-    height: 60%;
-    width: 43.5%;
-    background-color: pink;
+    height: 100%;
+    width: 33.33%;
     color: #464644;
+    background-color: #f4f2ee;
     float: left;
     position: relative;
 }
 
-#info-1-img {
+#globe-img {
+    height: 120px;
+    width: 100%;
+    background-image: url("globe.png");
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+    background-position: center;
+    margin-top: 5%;
+}
+
+#kids-world {
+    text-align: center;
+    margin-top: 4%;
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 40px;
+    margin-top: 3%;
+}
+
+.info-check {
     background-image: url("check.png");
     background-repeat: no-repeat;
     background-size: 45px 40px;
+    background-position: right;
     height: 40px;
-    width: 45px;
-    margin-left: 80px;
-    margin-top: 50px;
+    width: 20%;
+    position: relative;
+    float: left;
+    left: 0;
+    margin-right: 2.5%;
+    margin-left: 7.5%;
+}
+
+.info-desc {
+    position: relative;
+    float: left;
+    height: 40px;
+    width: 60%;
+    margin-left: 2.5%;
+}
+
+.info-desc p {
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 16px;
+    padding-top: 4%;
+}
+
+#info-1 {
+    margin-top: 5%;
+}
+
+#info-2 {
+    margin-top: 17.5%;
+}
+
+#info-3 {
+    margin-top: 30%;
 }
 
 #kids-contact {
-    top: 60%;
-    height: 20%;
-    background-color: blue;
+    height: 100%;
+    width: 33.33%;
     position: relative;
+    float: left;
 }
 
+/*MODAL KIDS*/
 
+#join-kids {
+    width: 100%;
+    text-align: center;
+    float: left;
+    border-radius: 0px;
+    box-shadow: none;
+    border-width: 0px;
+    top: 15px;
+}
+
+#join-kids .modal-header {
+    border-radius: 0px;
+}
+
+#contact-title {
+    height: 50px;
+    width: 100%;
+    color: #71d1cc;
+    background-color: #162928;
+    text-align: center;
+}
+
+#contact-title p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    padding-top: 4%;
+}
+
+#contact-desc {
+    margin-top: 16px;
+}
+
+#contact-desc p {
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: center;
+    padding: 5%;
+    margin: 0px;
+}
 
 
 

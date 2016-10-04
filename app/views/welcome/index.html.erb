@@ -59,7 +59,7 @@
 			<div class="ben-img img-1"></div>
 			<div class="ben-txt txt-1">
 				<h4>Recicla a distancia</h4>
-				¡No salgas de casa! Comienza separando residuos en tu hogar. Enséñale a los tuyos lo importante de cuidar el medio ambiente y <b>genera un nuevo hábito.</b>
+				<b>¡No salgas de casa!</b> Comienza separando residuos en tu hogar, nosotros pasamos por ellos 😎
 			</div>
 		</div>
 		
@@ -67,53 +67,98 @@
 			<div class="ben-img img-2"></div>
 			<div class="ben-txt txt-2">
 				<h4>Mejora tu entorno</h4>
-				<b>¡Ten por seguro que tus residuos no contaminan!</b> Tú nos ayudas separándolos y nosotros te ayudamos reciclándolos, ¡somos un equipo! #AyudandoAndo
+				<b>¡Tus residuos no contaminan!</b> Les damos una segund oportunidad reciclándolos 😉
 			</div>
 		</div>
 		
 		<div id="ben-3">
 			<div class="ben-img img-3"></div>
 			<div class="ben-txt txt-3">
-				<h4>Obtén premios</h4>
-				¡Cada que entregas residuos obtienes puntos! Sé de los mejores recicladores del mes y <b>obtendrás un lindo premio de parte de OCHO</b>
+				<h4>Recibe regalos</h4>
+				<b>¡Ganas puntos con cada entrega!</b> Sé de los mejores recicladores del mes y espera tu regalo 🎁
 			</div>
 		</div>
 	</div>
 
+	<hr width="80px">
+	<div id="kids-header">
+		<h2><span>Conoce más de OCHO Kids</span></h2>
+	</div>
+
 	<div id="ocho-kids">
-		<div id="kids-header">
-			<h2><span>Conoce más de OCHO Kids</span></h2>
-		</div>
-		<div id="kids-img"></div>
+		
 		<div id="kids-info">
 
+			<div id="globe-img"></div>
+
+			<h4 id="kids-world">¡Aprenderán a cuidar nuestro mundo!</h4>
+
 			<div id="info-1">
-				<div id="info-1-img"></div>
-				<div id="info-1-info">
+				<div class="info-check"></div>
+				<div class="info-desc">
 					<p>Inscribe a los más pequeños</p>
 				</div>
 			</div>
 
 			<div id="info-2">
-				<div id="info-2-img"></div>
-				<div id="info-2-info">
-					<p>Se encargarán de los residuos en casa</p>
+				<div class="info-check"></div>
+				<div class="info-desc">
+					<p>Serán los encargados en casa</p>
 				</div>
 			</div>
 
 			<div id="info-3">
-				<div id="info-3-img"></div>
-				<div id="info-3-info">
-					<p>Recibirán premios con su progreso</p>
+				<div class="info-check"></div>
+				<div class="info-desc">
+					<p>Recibirán premios por su progreso</p>
 				</div>
 			</div>
+		</div>
 
-			<div id="info-4">
-				<p>¡Aprenderán a cuidar nuestro mundo!</p>
+		<div id="kids-img"></div>
+
+		<div id="kids-contact">
+		
+			<div id="contact-title">
+				<p>¡Quiero más información!</p>
 			</div>
 
+			<div id="contact-desc">
+				<p>¡Queremos aclarar todas tus dudas!</br> Déjanos tus datos y te contactaremos por e-mail. Recibirás información sobre OCHO KIDS y responderemos cualquier pregunta que tengas.</p>
+			</div>
+
+			<div class="modal-content" id="join-kids"> <!-- Begins modal-content -->
+			    <div class="modal-header"  id="header-join">	
+			        <h4 class="modal-title">Datos de contacto</h4>
+			    </div>
+
+			  	<div class="modal-body" id="body-join">
+
+					<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+					<%= devise_error_messages! %>
+
+						<div class="field">
+					    	<%= f.label :email, "Nombre del pequeño" %><br />
+					    	<%= f.email_field :email, autofocus: true, class: "field_content" %>
+						</div>
+
+						<div class="field">
+					    	<%= f.label :email, "Nombre del tutor" %><br />
+					    	<%= f.email_field :email, autofocus: true, class: "field_content" %>
+						</div>
+
+					 	<div class="field">
+					    	<%= f.label :email, "e-mail" %><br />
+					    	<%= f.email_field :email, autofocus: true, class: "field_content" %>
+						</div>
+
+						<div class="actions">
+							<%= f.submit "enviar", class: "button-login-join" %>
+						</div>
+					<% end %>
+					</div>
+			</div><!-- /.modal-content -->
 		</div>
-		<div id="kids-contact"></div>
 	</div>
 
 </body>
