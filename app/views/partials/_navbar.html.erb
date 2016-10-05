@@ -14,6 +14,8 @@
 
       <a href="https://www.instagram.com/ochohazeco/" target="_blank" class="btn-social btn-instagram"><i class="fa fa-instagram"></i></a>
 
+      <a href="https://es.pinterest.com/ochohazeco/" target="_blank" class="btn-social btn-pinterest"><i class="fa fa-pinterest"></i></a>
+
     </div>
 
  <!-- Collect the nav links, forms, and other content for toggling -->
@@ -41,3 +43,111 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+<!-- MODAL LOGIN -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modalLogin">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-header" id="header-login">
+        <h4 class="modal-title">¡Bienvenido!</h4>
+      </div>
+      
+      <div class="modal-body" id="body-login">
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <%= f.label :email, "e-mail" %><br />
+        <%= f.email_field :email, autofocus: true, class: "field_content" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password, "contraseña" %><br />
+        <%= f.password_field :password, autocomplete: "off", class: "field_content" %>
+      </div>
+
+      <% if devise_mapping.rememberable? -%>
+        <div class="remember">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me, "Recuérdame" %>
+        </div>
+      <% end -%>
+
+      <div class="actions">
+        <%= f.submit "ingresar", class: "button-login-join" %>
+      </div>
+    <% end %>
+      </div>
+
+      <div class="modal-footer">
+    <%= render "devise/shared/links" %>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- MODAL FORGOTTEN PASSWORD -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modalPassword">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content" id="password-email"> <!-- Begins modal-content -->
+          <div class="modal-header"  id="header-password">  
+              <h4 class="modal-title">Olvidé mi contraseña</h4>
+          </div>
+    
+            <div class="modal-body" id="body-password-email">
+
+        <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+            <%= devise_error_messages! %>
+
+            <div class="field">
+              <%= f.label :email, "e-mail" %><br />
+              <%= f.email_field :email, autofocus: true, class: "field_content" %>
+            </div>
+
+          <div class="actions">
+            <%= f.submit "enviarme instrucciones", class: "button-login-join" %>
+          </div>
+        <% end %>
+      </div>
+
+          <!-- <div class="modal-footer"> -->
+          <%#= render "devise/shared/links" %>
+          <!-- </div> -->
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- CONFIRMATION EMAIL -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modalConfirmation">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content" id="conf-email"> <!-- Begins modal-content -->
+          <div class="modal-header"  id="header-confirmation">  
+              <h4 class="modal-title">No recibí el e-mail</h4>
+          </div>
+    
+            <div class="modal-body" id="body-password-email">
+
+        <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+          
+          <%= devise_error_messages! %>
+
+          <div class="field">
+            <%= f.label :email, "e-mail" %><br />
+              <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), class: "field_content" %>
+          </div>
+
+            <div class="actions">
+              <%= f.submit "reenviar instrucciones", class: "button-login-join" %>
+            </div>
+        <% end %>
+      </div>
+
+        <!-- <div class="modal-footer"> -->
+        <%#= render "devise/shared/links" %>
+        <!-- </div> -->
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

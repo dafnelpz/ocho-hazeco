@@ -209,6 +209,23 @@ a.btn-social, .btn-social {
 	background-color: #548cb9;
 }
 
+.btn-pinterest
+{
+    background-color: #cc2127;
+}
+.btn-pinterest:hover
+{
+    background-color: #e04046;
+}
+
+.btn-facebook i {
+    margin-left: -0.5px;
+}
+
+.btn-pinterest i {
+    margin-left: -1px;
+}
+
 /* BODY */
 body {
     background-color: #f7f6f3;
