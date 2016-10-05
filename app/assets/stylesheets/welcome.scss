@@ -180,7 +180,7 @@ div #header-join {
 #header-phrase h4 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 /*BENEFITS-WELCOME*/
@@ -499,6 +499,108 @@ Image credits: unsplash.com
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 4em; }    
 }
+
+/*TESTIMONIALS*/
+#temoign {
+    height: 500px;
+    width: 100%;
+    background-color: #162928;
+}
+
+.tem {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    float: left;
+    border-radius: 50%;
+    background-image: url("girl.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+}
+
+.tem-desc {
+    height: 200px;
+    width: 250px;
+    position: relative;
+    float: left;
+}
+
+.tem-desc p{
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 16px;
+    color: #404040;
+    margin-top: 35px;
+    padding: 10px;
+}
+
+.tem-1 {
+    margin-top: 160px;
+    margin-left: 150px;
+}
+
+.tem-desc-1 {
+    background-image: url("text_bubble_1.png");
+    background-repeat: no-repeat;
+    background-size: 250px 100%;
+    margin-top: 20px;
+
+}
+
+.tem-2 {
+    margin-right: 150px;
+    margin-top: 200px;
+    float: right;
+}
+
+.tem-desc-2 {
+    background-image: url("text_bubble_2.png");
+    background-repeat: no-repeat;
+    background-size: 250px 100%;
+    margin-top: 60px;
+    float: right;
+}
+
+.tem-3 {
+    margin-left: -100px;
+    margin-top: 380px;
+    float: left;
+
+}
+
+.tem-desc-3 {
+    background-image: url("text_bubble_3.png");
+    background-repeat: no-repeat;
+    background-size: 250px 100%;
+    margin-top: 240px;
+    float: left;
+}
+
+/*FOOTER*/
+#footer-info {
+    height: 50px;
+    width: 100%;
+    background-color: #323232;
+    text-align: center;
+}
+
+#footer-info p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #c1c1c1;
+    padding-top: 17px;
+}
+
+#footer-info span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #f58738;
+}
+
+
 
 
 
