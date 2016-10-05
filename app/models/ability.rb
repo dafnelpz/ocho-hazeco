@@ -14,7 +14,7 @@ class Ability
             can [:edit, :update], User, id: user.id
             can :manage, User
         elsif user.role.user
-            can [:edit, :update], User, id: user.id
+            can [:edit, :update, :delete], User, id: user.id
             can :show, [UserBag, Delivery], id: user.id
             can :profile, User, id: user.id
         end
