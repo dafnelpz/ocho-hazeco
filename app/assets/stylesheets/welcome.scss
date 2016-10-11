@@ -601,7 +601,6 @@ Image credits: unsplash.com
 .tem-pix {
     height: 120px;
     width: 120px;
-    background-color: yellow;
     border-radius: 50%;
     margin: 0 auto;
     background-image: url("girl.jpg");
@@ -645,8 +644,16 @@ Image credits: unsplash.com
     color: #f58738;
 }
 
-
-
+/*FOOTER OCHO*/
+#footer-ocho {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    background-image: url("bienvenido_ocho.png");
+    background-repeat: no-repeat;
+    background-size: 770px 260px;
+    background-position: center;
+}
 
 
 
