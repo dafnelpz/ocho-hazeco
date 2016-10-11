@@ -4,17 +4,17 @@
 		<div id="profile-pic"></div>
 		<div id ="profile-info">
 			<p id="c-user-name"><span><%= current_user.name  %><span></p>
-			<p id="c-user-agent"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tu agente es <span class="agent-info"><%= current_user.agent.name  %></span></p>
-			<p id="c-user-agent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📞 <span class="agent-info"><%= current_user.agent.phone  %></span></p>
-			<p id="c-user-agent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧 <span class="agent-info"><%= current_user.agent.email  %></span></p>
+			<p id="c-user-agent"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tu agente es <span class="agent-name"><%= current_user.agent.name  %></span></p>
+			<p id="c-user-agent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📞 <%= current_user.agent.phone  %></p>
+			<p id="c-user-agent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧 <%= current_user.agent.email  %></p>
 		</div>
 	</div>
 
 	<div id="profile-benefits">
 		<h4>Reciclando a distancia has logrado...</h4></br>
-		<p>Ahorrar <span class="benefit">215 lts</span>  de agua</p>
-		<p>Ahorrar <span class="benefit">3000 watts</span> de energía</p>
-		<p>Salvar <span class="benefit">20 especies</span> marinas</p>
+		<p>Ahorrar <span class="benefit bnft-1">215 lts</span>  de agua</p>
+		<p>Ahorrar <span class="benefit bnft-2">3000 watts</span> de energía</p>
+		<p>Salvar <span class="benefit bnft-3">20 especies</span> marinas</p>
 	</div>
 </div>
 

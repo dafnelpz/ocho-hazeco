@@ -1,10 +1,14 @@
 
 /*GENERAL INFO*/
 #general-info {
-	height: 100vh;
+	height: 600px;
 	width: 18%;
 	position: static;
-	color: #404040;
+	color: #fbfbfa;
+	margin-top: 14px;
+	background-color: #323232;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
 
 #user-info {
@@ -23,7 +27,7 @@
 	background-image: url("user_default.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	margin-top: 5%;
+	margin-top: 10%;
     margin-left: 19%;
 }
 
@@ -50,7 +54,8 @@
 	font-size: 16px;
 }
 
-.agent-info {
+.agent-name {
+	color: #71d1cc;
 	font-weight: bold;
 	font-size: 14px;
 }
@@ -61,9 +66,8 @@
     width: 100%;
     position: relative;
     float: left;
-    background-color: #f4f2ee;
     padding: 30px;
-    text-align: center;
+    text-align: right;
 }
 
 #profile-benefits h4 {
@@ -71,6 +75,7 @@
 	font-weight: lighter;
 	font-size: 20px;
 	margin-top: 0px;
+	border-top: 3px solid #71d1cc;
 }
 
 #profile-benefits p {
@@ -83,13 +88,26 @@
 	font-weight: bold;
 }
 
+.bnft-1 {
+	color: #bada55;
+}
+
+.bnft-2 {
+	color: #f58738;
+}
+
+.bnft-3 {
+	color: #ebdc5b;
+}
+
 /*DELIVERIES*/
 #profile-deliveries {
-	height: 100vh;
+	height: 600px;
 	width: 82%;
 	color: #404040;
-	background-color: pink;
 	position: relative;
+    float: right;
+    margin-top: -600px;
 }
 
 h5 {
@@ -104,8 +122,8 @@ h5 {
 }
 
 /*LAST DELIVERY*/
-/*#last-delivery {
-	height: 330px;
+#last-delivery {
+	height: 100%;
 	width: 50%;
 	position: relative;
 	float: left;
@@ -119,16 +137,16 @@ h5 {
 	position: relative;
 	float: left;
 	z-index: 10;
-}*/
+}
 
 /*TOTAL DELIVERIES*/
-/*#total-deliveries {
-	height: 330px;
+#total-deliveries {
+	height: 100%;
 	width: 50%;
 	position: relative;
 	float: right;
 	background-color: yellow;
-}*/
+}
 
 
 
