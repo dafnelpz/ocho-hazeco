@@ -192,8 +192,8 @@ div #header-join {
 #header-phrase {
     text-align: center;
     position: absolute;
-    left: 30%;
-    right: 30%;
+    left: 31%;
+    right: 31%;
     top: 60px;
     z-index: 10;
 }
@@ -534,10 +534,9 @@ Image credits: unsplash.com
 
 /*TESTIMONIALS*/
 #temoign {
-    height: 500px;
+    height: 400px;
     width: 100%;
-    background-color: #162928;
-    background-image: url("sky.jpg");
+    background-image: url("plastics.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -546,83 +545,42 @@ Image credits: unsplash.com
 .over-tem {
     position: absolute;
     width: 100%;
-    height: 500px;
-    z-index: 1;
-    background-color: #080d15;
-    opacity: .3;
+    height: 400px;
+    background-color: #162928;
+    opacity: .5;
 }
 
 .tem {
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 33.33%;
+    padding-top: 100px;
     position: relative;
     float: left;
+}
+
+.tem-pix {
+    height: 120px;
+    width: 120px;
+    background-color: yellow;
     border-radius: 50%;
+    margin: 0 auto;
     background-image: url("girl.jpg");
     background-repeat: no-repeat;
-    background-size: 100px 100px;
-    z-index: 10;
+    background-size: 120px 120px;
+
 }
 
 .tem-desc {
-    height: 200px;
-    width: 250px;
-    position: relative;
-    float: left;
-    z-index: 10;
+    margin: 20px;
+    text-align: center;
 }
 
-.tem-desc p{
-    text-align: center;
+.tem-desc p {
     font-family: Helvetica;
+    font-size: 18px;
     font-weight: lighter;
     font-style: italic;
-    font-size: 16px;
-    color: #404040;
-    margin-top: 35px;
-    padding: 10px;
-}
-
-.tem-1 {
-    margin-top: 160px;
-    margin-left: 180px;
-}
-
-.tem-desc-1 {
-    background-image: url("text_bubble_1.png");
-    background-repeat: no-repeat;
-    background-size: 250px 100%;
-    margin-top: 20px;
-
-}
-
-.tem-2 {
-    margin-right: 180px;
-    margin-top: 200px;
-    float: right;
-}
-
-.tem-desc-2 {
-    background-image: url("text_bubble_2.png");
-    background-repeat: no-repeat;
-    background-size: 250px 100%;
-    margin-top: 60px;
-    float: right;
-}
-
-.tem-3 {
-    margin-left: -100px;
-    margin-top: 380px;
-    float: left;
-
-}
-
-.tem-desc-3 {
-    background-image: url("text_bubble_3.png");
-    background-repeat: no-repeat;
-    background-size: 250px 100%;
-    margin-top: -10px;
-    float: left;
+    color: #d4f1ef;
 }
 
 /*FOOTER*/
