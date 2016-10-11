@@ -127,12 +127,20 @@ h5 {
 	width: 50%;
 	position: relative;
 	float: left;
-	background-color: green;
 }
 
-.table-last {
-	height: 340px;
-	width: 100px;
+#table-last {
+	height: 400px;
+	width: 100%;
+	background-color: pink;
+	position: relative;
+	float: left;
+	z-index: 10;
+}
+
+#comments-last {
+	height: 140px;
+	width: 100%;
 	background-color: green;
 	position: relative;
 	float: left;
@@ -148,6 +156,14 @@ h5 {
 	background-color: yellow;
 }
 
+#table-total {
+	height: 400px;
+	width: 100%;
+	background-color: blue;
+	position: relative;
+	float: left;
+	z-index: 10;
+}
 
 
 
