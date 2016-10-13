@@ -1,3 +1,4 @@
+<div id="form-edit-user">
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -12,20 +13,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.label :name, "Nombre" %><br>
+    <%= f.text_field :name, class: "field_content" %>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.label :email, "E-mail" %><br>
+    <%= f.text_field :email, class: "field_content" %>
   </div>
   <div class="field">
-    <%= f.label :phone %><br>
-    <%= f.text_field :phone %>
+    <%= f.label :phone, "Teléfono" %><br>
+    <%= f.text_field :phone, class: "field_content" %>
   </div>
   <div class="field">
-    <%= f.label :address %><br>
-    <%= f.text_field :address %>
+    <%= f.label :address, "Dirección" %><br>
+    <%= f.text_field :address, class: "field_content f-address" %>
   </div>
 
   <% if is_admin? %>
@@ -36,6 +37,7 @@
   <% end %>
 
   <div class="actions">
-    <%= f.submit "Actualizar" %>
+    <%= f.submit "Actualizar mi información", class: "button-update" %>
   </div>
 <% end %>
+</div>

@@ -1,4 +1,4 @@
-<h2>Mi información</h2>
+<h2 class="edit-user">Mi información</h2>
 
 <%= render 'users/form' %>
 
@@ -37,10 +37,11 @@
     <%#= f.submit "Update" %>
   <!-- </div> -->
 <%# end %>
-<%- if current_user.role.user%>
-  <h3>Cancel my account</h3>
+<hr>
+<div class="edit-user">
+  <%- if current_user.role.user%>
+    <p>¿No eres feliz en OCHO? ☹️ <%= button_to "Cancelar mi cuenta", registration_path(resource_name), data: { confirm: "¿Estás seguro?" }, method: :delete, class: "button-delete" %></p>
 
-  <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-  <%= link_to 'Regresar a mi perfil', users_profile_path %>
-<% end %>
+    <%= link_to 'Regresar a mi perfil', users_profile_path, class: "prof-return" %>
+  <% end %>
+</div>

@@ -1,3 +1,118 @@
 h2 {
-	font-family: Helvetica;
+	font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 22px;
+	color: #71d1cc;
+    background-color: #162928;
+    height: 40px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    padding-top: 8px;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 10px;
 }
+
+hr {
+	border: 3px solid #71d1cc;
+	width: 40px;
+}
+
+#form-edit-user {
+	text-align: center;
+}
+
+.edit-user {
+	text-align: center;
+}
+
+.edit-user p {
+	font-family: Helvetica;
+	font-weight: lighter;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.field {
+    font-family: Helvetica;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.field label {
+    margin: 0px;
+    font-weight: lighter;
+}
+
+.field_content {
+    font-weight: lighter;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid #404040 0.2px;
+}
+
+.f-address {
+	height: 100px;
+	word-wrap: break-word;
+}
+
+.button-update {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 17px;
+    width: 20%;
+    height: 32px;
+    border-color: transparent;
+    background-color: #a7c44c;
+    color: #374119;
+    margin-top: 5px;
+    margin-left: -15px;
+}
+
+.button-update:hover {
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.button-delete {
+	font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 13px;
+    width: 20%;
+    height: 26px;
+    border-color: transparent;
+    background-color: transparent;
+    color: #a33225;
+    margin-top: 4px;
+}
+
+.button-delete:hover {
+	color: #d15243;
+    opacity: 0.8;
+}
+
+.prof-return {
+	font-family: Helvetica;
+    font-weight: lighter;
+    color: #404040;
+}
+
+.prof-return:hover {
+    color: #5aa7a3;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
