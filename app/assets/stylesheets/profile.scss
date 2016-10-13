@@ -132,7 +132,6 @@ h5 {
 #table-last {
 	height: 400px;
 	width: 100%;
-	background-color: pink;
 	position: relative;
 	float: left;
 	z-index: 10;
@@ -153,27 +152,35 @@ h5 {
 	width: 50%;
 	position: relative;
 	float: right;
-	background-color: yellow;
 }
 
 #table-total {
 	height: 400px;
 	width: 100%;
-	background-color: blue;
 	position: relative;
 	float: left;
 	z-index: 10;
 }
 
+div #last-chart {
+	color: #404040;
+}
+
 #chart-1 {
+	height: 400px;
+	width: 524px;
+	color: #404040;
 }
 
 rect {
 	fill: transparent;
+	height: 400px;
+	width: 524px;
 }
 
-svg {
-
+canvas {
+	margin-left: 60px;
+    margin-top: 50px;
 }
 
 
