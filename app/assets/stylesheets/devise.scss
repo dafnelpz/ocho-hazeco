@@ -1,4 +1,8 @@
-h2 {
+body {
+    background-color: #fbfbfa;
+}
+
+.user-my-info {
 	font-family: 'Raleway', sans-serif;
     font-weight: lighter;
     text-align: center;
@@ -21,6 +25,7 @@ hr {
 
 #form-edit-user {
 	text-align: center;
+	margin-top: 10px;
 }
 
 .edit-user {
