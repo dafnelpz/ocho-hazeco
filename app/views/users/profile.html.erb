@@ -21,13 +21,18 @@
 <div id="profile-deliveries">
 	<div id="last-delivery">
 		<h5><span class="espan"><span class="benefit">La última vez</span> entregaste</span></h5>
-		<div id="table-last"></div>
+		<div id="table-last">
+		</div>
 		<div id="comments-last">
 		</div>
 	</div>
 	<div id="total-deliveries">
 		<h5><span class="espan"><span class="benefit">En total</span> has entregado</span></h5>
-		<div id="table-total"></div>
+		<div id="table-total">
+			<%= javascript_include_tag "https://www.google.com/jsapi", "chartkick" %>
+ 			<% my_chart = {"Bolsa azul": 45, "Bolsa naranja": 35, "Bolsa morada": 20} %>
+ 			<%= pie_chart my_chart %>
+		</div>
 	</div>
 </div>
 
