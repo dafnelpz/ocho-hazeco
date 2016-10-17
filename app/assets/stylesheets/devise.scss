@@ -13,7 +13,7 @@ body {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     padding-top: 8px;
-    width: 20%;
+    width: 256px;
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -43,11 +43,19 @@ hr {
     font-family: Helvetica;
     font-size: 16px;
     margin: 0px;
+    text-align: center;
 }
 
 .field label {
     margin: 0px;
     font-weight: lighter;
+}
+
+.field i {
+    font-size: 12px;
+    font-family: Helvetica;
+    font-weight: lighter;
+    color: #404040;
 }
 
 .field_content {
@@ -56,10 +64,11 @@ hr {
     background-color: transparent;
     border: none;
     border-bottom: solid #404040 0.2px;
+    text-align: center;
 }
 
 .f-address {
-	height: 100px;
+	height: 50px;
 	word-wrap: break-word;
 }
 
@@ -67,7 +76,7 @@ hr {
     font-family: 'Raleway', sans-serif;
     font-weight: lighter;
     font-size: 17px;
-    width: 20%;
+    width: 256px;
     height: 32px;
     border-color: transparent;
     background-color: #a7c44c;
@@ -110,6 +119,9 @@ hr {
     background-color: transparent;
 }
 
+.actions {
+    text-align: center;
+}
 
 
 
