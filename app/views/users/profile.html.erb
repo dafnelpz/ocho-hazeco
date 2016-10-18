@@ -3,10 +3,44 @@
 	<div id="user-info">
 		<div id="profile-pic"></div>
 		<div id ="profile-info">
-			<p id="c-user-name"><span><%= current_user.name  %><span></p>
-			<p id="c-user-agent"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tu agente es <span class="agent-name"><%= current_user.agent.name  %></span></p>
-			<p id="c-user-agent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📞 <%= current_user.agent.phone  %></p>
-			<p id="c-user-agent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧 <%= current_user.agent.email  %></p>
+			<p id="c-user-name">
+				<span>
+					<% if current_user.name.present? %>
+						<%= current_user.name  %>
+					<% else %>
+						<%= "¡Actualiza tu info!" %>
+					<% end %>
+				<span>
+			</p>
+
+			<p id="c-user-agent">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tu agente es 
+				<span class="agent-name">
+					<% if current_user.agent.present? %>
+						<%= current_user.agent.name  %>	
+					<% else %>
+						<%= "Aún no tienes asignado un agente" %>
+					<% end %>
+				</span>
+			</p>
+			
+			<p id="c-user-agent">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📞 
+					<% if current_user.agent.present? %>
+						<%= current_user.agent.phone %>
+					<% else %>
+						<%= "Aún no hay teléfono" %>
+					<% end %>
+			</p>
+			
+			<p id="c-user-agent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧 
+				<% if current_user.agent.present? %>
+					<%= current_user.agent.email %>
+				<% else %>
+						<%= "Aún no hay e-mail" %>
+				<% end %>
+			</p>
+
 		</div>
 	</div>
 
