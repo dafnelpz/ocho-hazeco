@@ -370,7 +370,7 @@ div #header-join {
 
 #join-kids {
     width: 100%;
-    height: 250px;
+    height: 237px;
     text-align: center;
     position: relative;
     float: left;
@@ -413,6 +413,19 @@ div.input {
 
 .required {
     font-weight: lighter;
+}
+
+input#contact_name, input#contact_email, textarea#contact_message {
+    font-weight: lighter;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid #404040 0.2px;
+    text-align: center;
+}
+
+#body-join-kids {
+    height: 161px;
 }
 
 /*UPDATES SLIDER*/
