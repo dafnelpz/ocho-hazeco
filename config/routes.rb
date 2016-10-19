@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     get '', to: 'dashboard#index', as: '/'
   end
 
-  match '/contacts',     to: 'contacts#new',             via: 'get'
+  # match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
