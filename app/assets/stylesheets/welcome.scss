@@ -558,11 +558,13 @@ Image credits: unsplash.com
 .btn.btn-hero,
 .btn.btn-hero:hover,
 .btn.btn-hero:focus {
-    color: #f5f5f5;
-    background-color: #1abc9c;
-    border-color: #1abc9c;
+    color: #162928;
+    background-color: #71d1cc;
+    border: none;
     outline: none;
     margin: 20px auto;
+    font-family: Helvetica;
+    font-weight: lighter;
 }
 
 /********************************/
@@ -679,6 +681,124 @@ Image credits: unsplash.com
     background-position: center;
 }
 
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (max-width: 400px) { 
+    
+    #header-phrase {
+        left: 20%;
+        right: 20%;
+        top: 40px;
+    }
+
+    #header-phrase h2 {
+        font-size: 28px;
+    }
+
+    #header-phrase h4 {
+        font-size: 20px;
+    }
+
+    #benefits-welcome {
+        height: 1160px;
+    }
+
+    #ben-1, #ben-2, #ben-3 {
+        width: 100%;
+        top: 0px;
+        margin-left: 0px;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero h3 {
+        font-size: 2em;
+    }
+
+    .btn.btn-hero {
+        margin-top: -10px;
+    }
+
+    .btn.btn-hero, .btn.btn-hero:hover, .btn.btn-hero:focus {
+        margin: 0px;
+    }
+
+    .btn.btn-lg {
+        padding: 6px 14px;
+    }
+
+    #blog {
+        margin-top: -25px;
+    }
+
+    #ocho-kids {
+        height: 970px;
+    }
+
+    #kids-img {
+        height: 400px;
+        width: 100%;
+        background-size: 400px 400px;
+        background-position: initial;
+    }
+
+    #kids-info {
+        width: 100%;
+        height: 250px;
+    }
+
+    .info-check {
+        background-size: 39px 35px;
+    }
+
+    .info-desc p {
+        font-size: 18px;
+    }
+
+    #info-1, #info-2, #info-3 {
+        margin-left: 10px;
+    }
+
+    #kids-contact {
+        width: 350px;
+        height: 300px;
+        left: 6%;
+    }
+
+    #join-kids {
+        height: 258px;
+    }
+
+    #join-kids .button-login-join {
+        width: 109.5%;
+    }
+
+    .button-login-join {
+        margin-left: -15px;
+    }
+
+    .modal-title {
+        font-size: 21px;
+    }
+
+    #temoign, .over-tem {
+        height: 950px;
+    }
+
+    .tem {
+        height: 33.33%;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    #footer-info p {
+    font-size: 14px;
+    padding-top: 4px;
+}
+}
 
 
 
