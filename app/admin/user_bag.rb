@@ -1,4 +1,4 @@
-ActiveAdmin.register Delivery do
+ActiveAdmin.register UserBag do
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -13,5 +13,15 @@ ActiveAdmin.register Delivery do
 #   permitted
 # end
 
+	form do |f|
+		f.inputs "User Info" do
+			f.input :user
+			f.input :agent, :input_html => { :value => current_user.id }, as: :hidden
+			f.input :bag
+			f.input :delivery
+			f.input :kg
+		end
+	f.actions
+	end
 
 end

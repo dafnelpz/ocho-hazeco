@@ -10,9 +10,11 @@ class Ability
             can :manage, :all
         elsif user.role.agent
             can :manage, [UserBag, Delivery], agent_id: user.id
+            can [:new, :create], [UserBag, Delivery]
             cannot :index, [UserBag, Delivery]
             can [:edit, :update], User, id: user.id
             can :manage, User
+            cannot [:delete, :destroy], User #, id: user.id
         elsif user.role.user
             can [:edit, :update, :delete], User, id: user.id
             can :show, [UserBag, Delivery], id: user.id
