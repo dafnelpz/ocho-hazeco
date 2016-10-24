@@ -13,5 +13,21 @@ ActiveAdmin.register Delivery do
 #   permitted
 # end
 
+	form do |f|
+		f.inputs "Delivery" do
+			f.input :user
+			f.input :agent, :input_html => { :value => current_user.id }, as: :hidden
+		end
+
+		f.inputs "Bags", :for => [:user_bags, f.object.user_bags || UserBag.new] do |bag_f|
+			bag_f.input :user
+			bag_f.input :agent, :input_html => { :value => current_user.id }, as: :hidden
+			bag_f.input :bag
+			bag_f.input :delivery
+			bag_f.input :kg
+		end
+
+	f.actions
+	end
 
 end

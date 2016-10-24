@@ -14,7 +14,7 @@ ActiveAdmin.register UserBag do
 # end
 
 	form do |f|
-		f.inputs "User Info" do
+		f.inputs "Bags" do
 			f.input :user
 			f.input :agent, :input_html => { :value => current_user.id }, as: :hidden
 			f.input :bag
