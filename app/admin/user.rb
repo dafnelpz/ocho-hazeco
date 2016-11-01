@@ -34,8 +34,6 @@ permit_params :id, :agent, :name, :email, :phone, :address, :encrypted_password 
 
 	filter :name
 	filter :email
-	filter :phone
-	filter :address
 
 	form do |f|
 		f.inputs "User Info" do

@@ -18,7 +18,7 @@
   </div>
   
   <!-- <div class="field"> -->
-    <%#= f.label :email, "e-mail" %><br>
+    <%#= f.label :email, "e-mail" %><!-- <br> -->
     <%#= f.text_field :email, class: "field_content" %>
   <!-- </div> -->
   
@@ -44,26 +44,3 @@
   </div>
 <% end %>
 </div>
-
-<!-- <script>
-  $(document).ready(function() {
-    $().on("button-update", function(){
-      var filter = $(this).val();
-      $.ajax({
-      url: '<%= users_path %>',
-      type: 'GET',
-      dataType: 'script',
-      data: {filter: filter},
-      })
-      .done(function() {
-        console.log("success");
-      })
-      .fail(function() {
-       console.log("error");
-      })
-      .always(function() {
-       console.log("complete");
-      });
-  });
-});
-</script> -->

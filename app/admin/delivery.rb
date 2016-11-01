@@ -34,4 +34,13 @@ ActiveAdmin.register Delivery do
 		actions
 	end
 
+	show do
+		attributes_table do
+      		row :user
+      		row :agent
+      		row :bag
+      		row :kg
+      end
+	end
+
 end
