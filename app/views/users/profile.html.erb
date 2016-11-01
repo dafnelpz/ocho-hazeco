@@ -70,11 +70,11 @@
 		<div id="table-total">
 			<%= javascript_include_tag "https://www.google.com/jsapi", "chartkick" %>
 			<% another_chart = {
-				"bolsa azul": 45,
+				"bolsa azul": 55,
 				"bolsa naranja": 35,
-				"bolsa morada": 20
+				"bolsa morada": 10
 			} %>
- 			<%= column_chart another_chart, id: "total-chart", height: "350px", colors: ["pink", "#999"] %>
+ 			<%= pie_chart another_chart, id: "total-chart", height: "350px" %>
 		</div>
 	</div>
 </div>
