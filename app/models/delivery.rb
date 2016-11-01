@@ -4,7 +4,8 @@ class Delivery < ActiveRecord::Base
   belongs_to :user
   belongs_to :agent, foreign_key: :agent_id, class_name: "User"
   has_many :user_bags
-  accepts_nested_attributes_for :user_bags
+  accepts_nested_attributes_for :user_bags, 
+  reject_if: ->(user_bag) { user_bag["kg"].blank? || user_bag["bag_id"].blank? }
 
   # CALLBACKS
   after_initialize :initialize_user_bags
