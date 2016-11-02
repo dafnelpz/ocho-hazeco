@@ -8,10 +8,12 @@ class User < ActiveRecord::Base
   # ASSOCIATIONS
   belongs_to :role
   has_many :users
+  has_many :deliveries, dependent: :destroy
   belongs_to :agent, foreign_key: :user_id, class_name: "User"
   
   # CALLBACKS
   before_save :set_default_role
+  after_create :set_user_id, if: :is_agent?
 
   # METHODS
 	def self.find_for_facebook_oauth(auth)
@@ -37,5 +39,21 @@ class User < ActiveRecord::Base
       default = Role.find_by(user: true)
       self.role_id ||= default.id if default
     end
+
+    def set_user_id
+      update(user_id: id)
+    end
+
+    def is_agent?
+      role.agent
+    end
+
   end
+
+
+
+
+
+
+
 

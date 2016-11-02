@@ -19,6 +19,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # PUT /resource
   def update
+    resource_updated = update_resource(resource, account_update_params)
+    
     redirect_to users_profile_path
   end
 
