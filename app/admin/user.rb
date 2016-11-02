@@ -15,7 +15,7 @@ ActiveAdmin.register User do
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
 
-permit_params :id, :agent, :name, :email, :phone, :address, :encrypted_password # PONER LOS PARÁMETROS QUE QUIERO QUE SE PUEDAN MODIFICAR
+permit_params :id, :agent, :name, :email, :phone, :address, :encrypted_password, :role_id, :password, :password_confirmation # PONER LOS PARÁMETROS QUE QUIERO QUE SE PUEDAN MODIFICAR
 #
 # or
 #
@@ -41,13 +41,13 @@ permit_params :id, :agent, :name, :email, :phone, :address, :encrypted_password 
 
 	form do |f|
 		f.inputs "User Info" do
-			if current_user.role.admin
-				f.input :role
-			end
+			f.input :role
 			f.input :name
 			f.input :email
 			f.input :phone
 			f.input :address
+			f.input :password
+			f.input :password_confirmation
 		end
 	f.actions
 	end
