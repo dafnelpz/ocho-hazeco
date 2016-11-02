@@ -14,8 +14,7 @@ class Ability
             cannot :index, [UserBag, Delivery]
             can [:edit, :update], User, id: user.id
             can :manage, User
-            cannot [:delete, :destroy], User #, id: user.id
-            cannot [:edit, :update], User
+            cannot [:delete, :destroy, :edit, :update, :new, :create], User #, id: user.id
         elsif user.role.user
             can [:edit, :update, :delete], User, id: user.id
             can :show, [UserBag, Delivery], id: user.id
