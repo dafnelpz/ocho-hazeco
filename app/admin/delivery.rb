@@ -39,8 +39,10 @@ ActiveAdmin.register Delivery do
 		attributes_table do
       		row :user
       		row :agent
-      		row :bag
-      		row :kg
+      		attributes_table_for delivery.user_bags do
+		      row :bag
+		      row :kg
+		    end
       end
 	end
 
