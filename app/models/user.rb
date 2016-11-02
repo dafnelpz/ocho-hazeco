@@ -48,6 +48,10 @@ class User < ActiveRecord::Base
       role.agent
     end
 
+    def confirmation_required?
+      role.user
+    end
+
   end
 
 
