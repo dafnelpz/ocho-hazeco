@@ -1,4 +1,5 @@
 ActiveAdmin.register User do
+	config.clear_action_items!
 
 	# actions :all, except: [:destroy] unless current_user.role.admin
 
@@ -28,6 +29,9 @@ permit_params :id, :agent, :name, :email, :phone, :address, :encrypted_password 
 		column :name
 		column :email
 		column :phone
+		if current_user.role.admin
+			column :role
+		end
 
 		actions
 	end
@@ -37,6 +41,9 @@ permit_params :id, :agent, :name, :email, :phone, :address, :encrypted_password 
 
 	form do |f|
 		f.inputs "User Info" do
+			if current_user.role.admin
+				f.input :role
+			end
 			f.input :name
 			f.input :email
 			f.input :phone
@@ -55,6 +62,15 @@ permit_params :id, :agent, :name, :email, :phone, :address, :encrypted_password 
 			row :address
 		end
 	end
+
+	action_item :except => [:new, :show] do
+	    # New link
+	    if current_user.role.admin 
+	    	if controller.current_ability.can?( :create, active_admin_config.resource_class ) and controller.action_methods.include?('new')
+	      		link_to(I18n.t('active_admin.new_model', :model => active_admin_config.resource_name), new_resource_path)
+	   		end
+	   	end
+  	end
 
 	controller do
 		def scoped_collection
