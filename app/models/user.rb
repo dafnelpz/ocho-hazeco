@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   belongs_to :role
   has_many :users
   has_many :deliveries, dependent: :destroy
+  has_many :user_bags, through: :deliveries
   belongs_to :agent, foreign_key: :user_id, class_name: "User"
   
   # CALLBACKS
@@ -32,6 +33,14 @@ class User < ActiveRecord::Base
 
   def to_s
     name
+  end
+
+  def last_delivery_chart
+    deliveries.last.user_bags.map { |u| [u.bag, u.kg] }.to_h
+  end
+
+  def total_delivery_chart
+    user_bags.joins(:bag).group("bags.color").sum(:kg).to_h
   end
 
   protected

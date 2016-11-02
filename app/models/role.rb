@@ -4,11 +4,11 @@ class Role < ActiveRecord::Base
 
 	def to_s
 		if user
-  			"Usuario"
+  			"User"
 		elsif agent
-			"Agente"
+			"Agent"
 		elsif admin
-			"Administrador"
+			"Admin"
 		end
 	end
 end

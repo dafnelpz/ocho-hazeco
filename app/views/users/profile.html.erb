@@ -57,24 +57,14 @@
 		<h5><span class="espan"><span class="benefit">La última vez</span> entregaste</span></h5>
 		<div id="table-last">
 			<%= javascript_include_tag "https://www.google.com/jsapi", "chartkick" %>
- 			<% my_chart = {
- 				"bolsa azul": 45,
- 				"bolsa naranja": 35,
- 				"bolsa morada": 20
- 			} %>
- 			<%= pie_chart my_chart, id: "last-chart", height: "350px" %>
+ 			<%= pie_chart current_user.last_delivery_chart, id: "last-chart", height: "350px" %>
 		</div>
 	</div>
 	<div id="total-deliveries">
 		<h5><span class="espan"><span class="benefit">En total</span> has entregado</span></h5>
 		<div id="table-total">
 			<%= javascript_include_tag "https://www.google.com/jsapi", "chartkick" %>
-			<% another_chart = {
-				"bolsa azul": 55,
-				"bolsa naranja": 35,
-				"bolsa morada": 10
-			} %>
- 			<%= pie_chart another_chart, id: "total-chart", height: "350px" %>
+ 			<%= pie_chart current_user.total_delivery_chart, id: "total-chart", height: "350px" %>
 		</div>
 	</div>
 </div>
