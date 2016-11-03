@@ -1,5 +1,4 @@
 ActiveAdmin.register Delivery do
-
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -44,6 +43,14 @@ ActiveAdmin.register Delivery do
 		      row :kg
 		    end
       end
+	end
+
+	controller do
+
+  		def new
+		    @delivery = Delivery.new
+		    @delivery.initialize_user_bags
+	  	end
 	end
 
 end
