@@ -34,6 +34,9 @@ ActiveAdmin.register Delivery do
 		actions
 	end
 
+	filter :user
+	filter :agent
+
 	show do
 		attributes_table do
       		row :user
